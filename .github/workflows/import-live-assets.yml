@@ -1,0 +1,64 @@
+name: Import UNTOLD live assets and wiki shell
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/import-live-assets.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Import existing visual assets
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p assets
+          BASE='https://untold-wiki-m2her48hr-yyyyyuto0201-8151.vercel.app'
+          files=(
+            game-screen-reference.webp
+            eld-overview.webp
+            card-001-forgotten-bookmark.webp
+            card-002-closed-box.webp
+            card-003-rainless-stone.webp
+            card-055-book-eating-rat.webp
+            card-056-mud-boar.webp
+            card-082-kind-man.webp
+            card-083-question-old-woman.webp
+          )
+          for f in "${files[@]}"; do
+            echo "Importing $f"
+            curl --fail --location --silent --show-error "$BASE/assets/$f" -o "assets/$f"
+          done
+
+      - name: Import and retarget the Wiki shell
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl --fail --location --silent --show-error 'https://untold-wiki-yyyyyuto0201-8151.vercel.app/' -o index.html
+          python - <<'PY'
+          from pathlib import Path
+          p = Path('index.html')
+          s = p.read_text(encoding='utf-8')
+          s = s.replace("const CFG={owner:'fg79sw4nvw-dot',repo:'takken-kakomon-analysis',branch:'untold-wiki'};",
+                        "const CFG={owner:'fg79sw4nvw-dot',repo:'untold-wiki',branch:'main'};")
+          s = s.replace('https://untold-wiki-m2her48hr-yyyyyuto0201-8151.vercel.app/${u}', '${u}')
+          p.write_text(s, encoding='utf-8')
+          PY
+
+      - name: Commit imported assets and site shell
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets index.html
+          git commit -m "Import UNTOLD visual assets and retarget wiki shell" || exit 0
+          git push origin main
