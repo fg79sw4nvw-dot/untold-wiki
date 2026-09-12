@@ -30,6 +30,7 @@
     {"slug":"time-weather","category":"システム","path":"pages/systems/time-weather.md"},
     {"slug":"spells","category":"システム","path":"pages/systems/spells.md"},
     {"slug":"economy","category":"システム","path":"pages/systems/economy.md"},
+    {"slug":"encounters","category":"システム","path":"pages/systems/encounters.md"},
     {"slug":"card-001","category":"カード／遺物","path":"pages/cards/001-forgotten-bookmark.md","images":["assets/card-001-forgotten-bookmark.webp"]},
     {"slug":"card-002","category":"カード／遺物","path":"pages/cards/002-closed-box.md","images":["assets/card-002-closed-box.webp"]},
     {"slug":"card-003","category":"カード／遺物","path":"pages/cards/003-rainless-stone.md","images":["assets/card-003-rainless-stone.webp"]},
