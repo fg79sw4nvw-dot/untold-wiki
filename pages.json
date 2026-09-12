@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "home": "home",
+  "pages": [
+    {"slug":"home","category":"概要","path":"pages/home.md","images":["assets/game-screen-reference.webp"]},
+    {"slug":"world","category":"世界","path":"pages/world/world.md"},
+    {"slug":"world-map","category":"世界","path":"pages/world/world-map.md"},
+    {"slug":"eld","category":"世界","path":"pages/world/eld.md","images":["assets/eld-overview.webp"]},
+    {"slug":"eld-layout","category":"世界","path":"pages/world/eld-layout.md"},
+    {"slug":"eld-npcs","category":"世界","path":"pages/world/eld-npcs.md"},
+    {"slug":"eld-npc-movement","category":"世界","path":"pages/world/eld-npc-movement.md"},
+    {"slug":"gamemaster","category":"ストーリー","path":"pages/story/gamemaster.md"},
+    {"slug":"book","category":"システム","path":"pages/systems/book.md"},
+    {"slug":"card-system","category":"システム","path":"pages/systems/cards.md"},
+    {"slug":"card-template","category":"システム","path":"pages/systems/card-template.md","images":["assets/card-template-reference.jpg"]},
+    {"slug":"recording","category":"システム","path":"pages/systems/recording.md"},
+    {"slug":"time-weather","category":"システム","path":"pages/systems/time-weather.md"},
+    {"slug":"spells","category":"システム","path":"pages/systems/spells.md"},
+    {"slug":"economy","category":"システム","path":"pages/systems/economy.md"},
+    {"slug":"card-001","category":"カード／遺物","path":"pages/cards/001-forgotten-bookmark.md","images":["assets/card-001-forgotten-bookmark.webp"]},
+    {"slug":"card-002","category":"カード／遺物","path":"pages/cards/002-closed-box.md","images":["assets/card-002-closed-box.webp"]},
+    {"slug":"card-003","category":"カード／遺物","path":"pages/cards/003-rainless-stone.md","images":["assets/card-003-rainless-stone.webp"]},
+    {"slug":"card-055","category":"カード／生物","path":"pages/cards/055-book-eating-rat.md","images":["assets/card-055-book-eating-rat.webp"]},
+    {"slug":"card-056","category":"カード／生物","path":"pages/cards/056-mud-boar.md","images":["assets/card-056-mud-boar.webp"]},
+    {"slug":"card-082","category":"カード／人物","path":"pages/cards/082-kind-man.md","images":["assets/card-082-kind-man.webp"]},
+    {"slug":"card-083","category":"カード／人物","path":"pages/cards/083-question-old-woman.md","images":["assets/card-083-question-old-woman.webp"]},
+    {"slug":"open-items","category":"管理","path":"pages/open-items.md"},
+    {"slug":"implementation","category":"開発","path":"pages/development/implementation.md"}
+  ]
+}
