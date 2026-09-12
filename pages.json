@@ -7,6 +7,7 @@
     {"slug":"world-map","category":"世界","path":"pages/world/world-map.md"},
     {"slug":"world-regions-routes","category":"世界","path":"pages/world/world-regions-routes.md"},
     {"slug":"world-rivers-lakes-crossings","category":"世界","path":"pages/world/world-rivers-lakes-crossings.md"},
+    {"slug":"towns","category":"世界","path":"pages/world/towns.md"},
     {"slug":"eld","category":"世界","path":"pages/world/eld.md","images":["assets/eld-overview.webp"]},
     {"slug":"eld-layout","category":"世界","path":"pages/world/eld-layout.md"},
     {"slug":"eld-npcs","category":"世界","path":"pages/world/eld-npcs.md"},
