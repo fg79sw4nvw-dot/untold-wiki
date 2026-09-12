@@ -24,6 +24,7 @@
     {"slug":"gamemaster","category":"ストーリー","path":"pages/story/gamemaster.md"},
     {"slug":"book","category":"システム","path":"pages/systems/book.md"},
     {"slug":"card-system","category":"システム","path":"pages/systems/cards.md"},
+    {"slug":"free-pocket","category":"システム","path":"pages/systems/free-pocket.md"},
     {"slug":"card-template","category":"システム","path":"pages/systems/card-template.md","images":["assets/card-template-reference.jpg"]},
     {"slug":"recording","category":"システム","path":"pages/systems/recording.md"},
     {"slug":"time-weather","category":"システム","path":"pages/systems/time-weather.md"},
