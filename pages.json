@@ -14,6 +14,7 @@
     {"slug":"north-island-town","category":"世界","path":"pages/world/north-island-town.md"},
     {"slug":"east-island-town","category":"世界","path":"pages/world/east-island-town.md"},
     {"slug":"north-town","category":"世界","path":"pages/world/north-town.md"},
+    {"slug":"west-forest-town","category":"世界","path":"pages/world/west-forest-town.md"},
     {"slug":"eld","category":"世界","path":"pages/world/eld.md","images":["assets/eld-overview.webp"]},
     {"slug":"eld-layout","category":"世界","path":"pages/world/eld-layout.md"},
     {"slug":"eld-npcs","category":"世界","path":"pages/world/eld-npcs.md"},
