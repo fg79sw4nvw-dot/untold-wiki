@@ -8,6 +8,7 @@ UNTOLDのゲーム設計・実装仕様の正本リポジトリです。
 - 画像・視覚基準: `assets/`
 - 未確定事項: `pages/open-items.md`
 - ChatGPT実装引き継ぎ: `pages/development/implementation.md`
+- 簡易エンカウント仕様: `pages/systems/encounters.md`
 
 新しいチャットでは「GitHubの `fg79sw4nvw-dot/untold-wiki` を正本として読み込む」と指定してください。
 
