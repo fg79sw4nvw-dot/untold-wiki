@@ -5,6 +5,7 @@
     {"slug":"home","category":"概要","path":"pages/home.md","images":["assets/game-screen-reference.webp"]},
     {"slug":"world","category":"世界","path":"pages/world/world.md"},
     {"slug":"world-map","category":"世界","path":"pages/world/world-map.md"},
+    {"slug":"world-regions-routes","category":"世界","path":"pages/world/world-regions-routes.md"},
     {"slug":"eld","category":"世界","path":"pages/world/eld.md","images":["assets/eld-overview.webp"]},
     {"slug":"eld-layout","category":"世界","path":"pages/world/eld-layout.md"},
     {"slug":"eld-npcs","category":"世界","path":"pages/world/eld-npcs.md"},
