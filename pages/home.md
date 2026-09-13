@@ -13,9 +13,11 @@
 - ゲームマスター：`pages/story/gamemaster.md`
 - 世界設定：`pages/world/world.md`
 - エルド：`pages/world/eld.md`
+- エルド開始直後の確定進行：`pages/development/eld-opening-sequence.md`
 - ブック：`pages/systems/book.md`
 - カード化・指定カード：`pages/systems/cards.md`
 - 記録・情報収集：`pages/systems/recording.md`
+- チュートリアル・視覚誘導：`pages/systems/tutorial-guidance.md`
 - 未確定・保留事項：`pages/open-items.md`
 - ChatGPT実装・更新運用：`pages/development/implementation.md`
 
