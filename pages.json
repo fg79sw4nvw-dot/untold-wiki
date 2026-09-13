@@ -6,6 +6,7 @@
     {"slug":"world","category":"世界","path":"pages/world/world.md"},
     {"slug":"world-map","category":"世界","path":"pages/world/world-map.md"},
     {"slug":"terrain-allocation-final","category":"世界","path":"pages/world/terrain-allocation-final.md"},
+    {"slug":"region-mask","category":"世界","path":"pages/world/region-mask.md"},
     {"slug":"world-regions-routes","category":"世界","path":"pages/world/world-regions-routes.md"},
     {"slug":"world-rivers-lakes-crossings","category":"世界","path":"pages/world/world-rivers-lakes-crossings.md"},
     {"slug":"towns","category":"世界","path":"pages/world/towns.md"},
