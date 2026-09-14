@@ -1,14 +1,19 @@
 {
-  "schemaVersion": 2,
+  "schemaVersion": 3,
   "updatedAt": "2026-09-15",
   "repository": "fg79sw4nvw-dot/untold-wiki",
   "branch": "main",
-  "purpose": "AI routing metadata for UNTOLD Wiki. This file does not replace the topical specification pages.",
+  "purpose": "Detailed AI routing metadata for UNTOLD Wiki. Use ai-index.json first for normal requests. This file does not replace topical specification pages.",
   "bootstrap": [
     "AGENTS.md",
-    "README.md",
-    "pages/chatgpt-guide.md"
+    "ai-index.json"
   ],
+  "routingUsage": {
+    "normal": "AGENTS.md -> ai-index.json -> directly relevant canonical page(s)",
+    "currentState": "AGENTS.md -> ai-current.json -> referenced current-state source",
+    "ambiguousOrCrossCutting": "AGENTS.md -> ai-index.json -> ai-manifest.json -> canonical page(s)",
+    "governanceOrAudit": "AGENTS.md -> pages/chatgpt-guide.md -> pages/governance/spec-maintenance.md and required registries"
+  },
   "authorityOrder": [
     "newly confirmed decisions in the current conversation that are not yet committed",
     "topic-specific current canonical page",
@@ -27,10 +32,13 @@
     "旧": "history or compatibility only"
   },
   "sourceRoles": {
+    "fastIndex": "ai-index.json",
+    "currentStateRouter": "ai-current.json",
     "router": [
       "AGENTS.md",
-      "pages/chatgpt-guide.md",
-      "ai-manifest.json"
+      "ai-index.json",
+      "ai-manifest.json",
+      "pages/chatgpt-guide.md"
     ],
     "specMaintenance": "pages/governance/spec-maintenance.md",
     "criteriaRegistry": "governance/criteria-registry.json",
@@ -199,11 +207,13 @@
     },
     {
       "topic": "current milestone and what to decide next",
+      "context": "ai-current.json",
       "primary": ["pages/development/free-exploration-core-milestone.md"],
       "secondary": ["pages/open-items.md"]
     },
     {
       "topic": "current implementation state",
+      "context": "ai-current.json",
       "primary": ["pages/development/implementation-status.md", "fg79sw4nvw-dot/untold-game"],
       "rule": "The status page is progress documentation, not a game-design source of truth. Verify the game repository when current implementation matters."
     },
@@ -214,6 +224,16 @@
     }
   ],
   "legacyOrNonAuthoritative": [
+    {
+      "path": "ai-index.json",
+      "role": "fast routing cache",
+      "useAsCurrentSpec": false
+    },
+    {
+      "path": "ai-current.json",
+      "role": "current-state navigation cache",
+      "useAsCurrentSpec": false
+    },
     {
       "path": "wiki.json",
       "role": "legacy compatibility and history",
@@ -238,6 +258,7 @@
   "updateRules": {
     "confirmedDecision": "Write it to the topic-specific canonical page. Also review open-items, indexes, aliases and related references.",
     "singleSource": "Keep one canonical source per specification fact. Prefer links or routing references over duplicated confirmed summaries in management pages.",
+    "fastRoutingCache": "Update ai-index.json when routing or high-value section hints change. Update ai-current.json only when current milestone or its primary navigation pointers change.",
     "crossCuttingCriterion": "Register or revise the criterion in governance/criteria-registry.json with a stable id, scope, retroactiveMode and revision.",
     "retroactiveCriterion": "When an added or changed criterion is applied or reviewed against existing content, record the affected, changed and exception paths in governance/review-ledger.json.",
     "newOrRemovedPublicPage": "Update pages.json.",
