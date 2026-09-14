@@ -10,6 +10,7 @@
 
 - ChatGPT運用・参照ルーター：`pages/chatgpt-guide.md`
 - 設計判断・物語上の共通原則：`pages/design-philosophy.md`
+- 伏線管理：`pages/story/foreshadowing-ledger.md`
 - 命名基準：`pages/naming-guidelines.md`
 - 主人公：`pages/story/protagonist.md`
 - ゲームマスター：`pages/story/gamemaster.md`
