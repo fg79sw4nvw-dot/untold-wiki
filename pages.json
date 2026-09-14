@@ -23,6 +23,7 @@
     {"slug":"highland-town","category":"世界","path":"pages/world/highland-town.md"},
     {"slug":"eld","category":"世界","path":"pages/world/eld.md","images":["assets/eld-overview.webp"]},
     {"slug":"eld-layout","category":"世界","path":"pages/world/eld-layout.md"},
+    {"slug":"protagonist-home","category":"世界","path":"pages/world/protagonist-home.md"},
     {"slug":"eld-npcs","category":"世界","path":"pages/world/eld-npcs.md"},
     {"slug":"eld-npc-movement","category":"世界","path":"pages/world/eld-npc-movement.md"},
     {"slug":"gamemaster","category":"ストーリー","path":"pages/story/gamemaster.md"},
@@ -30,6 +31,7 @@
     {"slug":"protagonist-dialogue-log","category":"ストーリー","path":"pages/story/protagonist-dialogue-log.md"},
     {"slug":"book","category":"システム","path":"pages/systems/book.md"},
     {"slug":"card-system","category":"システム","path":"pages/systems/cards.md"},
+    {"slug":"cardization-rules","category":"システム","path":"pages/systems/cardization-rules.md"},
     {"slug":"free-pocket","category":"システム","path":"pages/systems/free-pocket.md"},
     {"slug":"card-template","category":"システム","path":"pages/systems/card-template.md","images":["assets/card-template-reference.jpg"]},
     {"slug":"recording","category":"システム","path":"pages/systems/recording.md"},
@@ -39,6 +41,7 @@
     {"slug":"encounters","category":"システム","path":"pages/systems/encounters.md"},
     {"slug":"events","category":"システム","path":"pages/systems/events.md"},
     {"slug":"gameplay-ui","category":"システム","path":"pages/systems/gameplay-ui.md"},
+    {"slug":"map-display-basis","category":"システム","path":"pages/systems/map-display-basis.md"},
     {"slug":"tutorial-guidance","category":"システム","path":"pages/systems/tutorial-guidance.md"},
     {"slug":"card-001","category":"カード／遺物","path":"pages/cards/001-forgotten-bookmark.md","images":["assets/card-001-forgotten-bookmark.webp"]},
     {"slug":"card-002","category":"カード／遺物","path":"pages/cards/002-closed-box.md","images":["assets/card-002-closed-box.webp"]},
@@ -49,6 +52,7 @@
     {"slug":"card-083","category":"カード／人物","path":"pages/cards/083-question-old-woman.md","images":["assets/card-083-question-old-woman.webp"]},
     {"slug":"open-items","category":"管理","path":"pages/open-items.md"},
     {"slug":"eld-playthrough-goal","category":"開発","path":"pages/development/eld-playthrough-goal.md"},
+    {"slug":"day2-home-tutorial","category":"開発","path":"pages/development/day2-home-tutorial.md"},
     {"slug":"implementation","category":"開発","path":"pages/development/implementation.md"}
   ]
 }
