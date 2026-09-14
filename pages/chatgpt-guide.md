@@ -17,6 +17,22 @@ ChatGPTがUNTOLD Wikiを参照・更新する際の運用正本。通常回答�
 
 単なる相づちや直前の発言だけで完結する確認では、Wiki参照を省略してよい。
 
+## 再開・「次に何を決めるか」の判断手順【確定】
+
+開発再開時、または「次は何を決めるか」「現在どこまで決まっているか」を判断するときは、以下の手順を守る。
+
+1. `ai-current.json` で現行マイルストーンと現在地の入口を確認する。
+2. マイルストーンと進捗から、次に確認すべき**候補トピック**を決める。
+3. その候補トピックを `ai-index.json` で再ルーティングし、個別正本を読む。
+4. 進行が複数ページへまたがる場合は、正本本文から示される後続正本・関連正本をたどり、**最後に確定済みの進行地点まで**確認する。
+5. 個別正本で既に確定している内容は、実装されていなくても「次に決める項目」へ戻さない。
+6. 本当に未確定かを判断するときは `pages/open-items.md` も確認する。ただし、個別正本と食い違う場合は個別正本を優先し、`open-items` 側を整理対象とする。
+7. ここまで確認して初めて、新しく設計・判断が必要な境界を「次に決める項目」として提示する。
+
+**`未実装`・`未接続`・`実装保留` と、仕様上の `未確定` は別概念とする。**
+
+`pages/development/implementation-status.md` やゲーム本体に処理が存在しないことは、実装差分を示すだけであり、仕様が未確定である根拠にはしない。
+
 ## 情報源の優先順位【確定】
 
 矛盾時は次を優先する。
@@ -57,6 +73,7 @@ ChatGPTがUNTOLD Wikiを参照・更新する際の運用正本。通常回答�
 - カード：`pages/systems/cards.md`、`pages/systems/cardization-rules.md`
 - 現行マイルストーン：`pages/development/free-exploration-core-milestone.md`
 - 実装状況：`pages/development/implementation-status.md` とゲーム本体 `fg79sw4nvw-dot/untold-game`
+- ゲーム開始からDay 2の必須導入：`pages/development/eld-opening-sequence.md`、`pages/cards/055-book-eating-rat.md`、`pages/development/day2-home-tutorial.md`、`pages/world/protagonist-home.md`
 
 ## 正本の重複を避ける【確定】
 
@@ -103,6 +120,8 @@ ChatGPTがUNTOLD Wikiを参照・更新する際の運用正本。通常回答�
 - 旧名称・旧座標が現行正本へ誤って残っていないか。
 - 旧資料が現行正本より優先される導線になっていないか。
 - `implementation.md` や進捗ページが個別正本を上書きする扱いになっていないか。
+- **進捗ページの `未実装` が、再開時に仕様上の `未確定` と誤読される導線になっていないか。**
+- **現行マイルストーンの直近フローが複数正本へまたがる場合、再開用ルートから後続正本まで到達できるか。**
 - 新しい基準の遡及レビューが未完了のまま適用済み扱いされていないか。
 
 `tools/validate-ai-routing.mjs` と `.github/workflows/validate-ai-routing.yml` は、AIルーティングの参照切れや主要見出し不整合の機械検査に使う。
