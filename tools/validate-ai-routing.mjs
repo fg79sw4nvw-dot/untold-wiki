@@ -10,7 +10,7 @@ const index = readJson('ai-index.json');
 const manifest = readJson('ai-manifest.json');
 const current = readJson('ai-current.json');
 
-const isExternalRepo = (value) => /^[\w.-]+\/[\w.-]+$/.test(value) && !value.includes('.md');
+const isExternalTarget = (value) => value === 'fg79sw4nvw-dot/untold-game';
 
 for (const [route, targets] of Object.entries(index.routes ?? {})) {
   if (!Array.isArray(targets) || targets.length === 0) {
@@ -18,7 +18,7 @@ for (const [route, targets] of Object.entries(index.routes ?? {})) {
     continue;
   }
   for (const target of targets) {
-    if (!isExternalRepo(target) && !exists(target)) {
+    if (!isExternalTarget(target) && !exists(target)) {
       errors.push(`ai-index missing target: ${route} -> ${target}`);
     }
   }
@@ -29,9 +29,14 @@ for (const [file, headings] of Object.entries(index.sectionHints ?? {})) {
     errors.push(`ai-index sectionHints file missing: ${file}`);
     continue;
   }
-  const text = fs.readFileSync(path.join(root, file), 'utf8');
+  const lines = fs.readFileSync(path.join(root, file), 'utf8').split(/\r?\n/);
+  const actualHeadings = new Set(
+    lines
+      .filter((line) => line.startsWith('#'))
+      .map((line) => line.replace(/^#+\s*/, '').trim())
+  );
   for (const heading of headings) {
-    if (!text.includes(`# ${heading}`) && !text.includes(`## ${heading}`) && !text.includes(`### ${heading}`) && !text.includes(`#### ${heading}`)) {
+    if (!actualHeadings.has(heading)) {
       errors.push(`ai-index heading missing: ${file} -> ${heading}`);
     }
   }
@@ -39,9 +44,12 @@ for (const [file, headings] of Object.entries(index.sectionHints ?? {})) {
 
 for (const route of manifest.routing ?? []) {
   for (const target of [...(route.primary ?? []), ...(route.secondary ?? [])]) {
-    if (!isExternalRepo(target) && !exists(target)) {
+    if (!isExternalTarget(target) && !exists(target)) {
       errors.push(`ai-manifest missing target: ${route.topic} -> ${target}`);
     }
+  }
+  if (route.context && !exists(route.context)) {
+    errors.push(`ai-manifest missing context file: ${route.topic} -> ${route.context}`);
   }
 }
 
