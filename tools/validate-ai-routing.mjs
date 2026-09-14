@@ -60,6 +60,45 @@ if (current.currentMilestone?.source && !exists(current.currentMilestone.source)
   errors.push(`ai-current milestone source missing: ${current.currentMilestone.source}`);
 }
 
+// Resume safety checks: current development spans several canonical pages.
+// These assertions prevent later router cleanup from accidentally reducing
+// "resume / what next" navigation back to an incomplete early-flow view.
+const requiredCurrentSources = {
+  openingSequence: 'pages/development/eld-opening-sequence.md',
+  day2HomeTutorial: 'pages/development/day2-home-tutorial.md',
+  firstQuest: 'pages/cards/055-book-eating-rat.md',
+  protagonistHome: 'pages/world/protagonist-home.md',
+};
+for (const [name, expected] of Object.entries(requiredCurrentSources)) {
+  if (current.sources?.[name] !== expected) {
+    errors.push(`ai-current resume source mismatch: ${name} -> expected ${expected}`);
+  }
+}
+
+const requiredEarlyFlowTargets = [
+  'pages/development/eld-opening-sequence.md',
+  'pages/development/day2-home-tutorial.md',
+  'pages/cards/055-book-eating-rat.md',
+  'pages/world/protagonist-home.md',
+];
+const earlyFlowTargets = new Set(index.routes?.['opening-early-eld'] ?? []);
+for (const target of requiredEarlyFlowTargets) {
+  if (!earlyFlowTargets.has(target)) {
+    errors.push(`ai-index opening-early-eld missing resume target: ${target}`);
+  }
+}
+
+const requiredIntroTargets = new Set(index.routes?.['required-introduction-day1-day2'] ?? []);
+for (const target of requiredEarlyFlowTargets) {
+  if (!requiredIntroTargets.has(target)) {
+    errors.push(`ai-index required-introduction-day1-day2 missing target: ${target}`);
+  }
+}
+
+if (!Array.isArray(index.routes?.['current-milestone-next-step'])) {
+  errors.push('ai-index missing current-milestone-next-step route');
+}
+
 for (const required of ['AGENTS.md', 'ai-index.json', 'ai-current.json', 'ai-manifest.json', 'pages/chatgpt-guide.md']) {
   if (!exists(required)) errors.push(`required AI routing file missing: ${required}`);
 }
