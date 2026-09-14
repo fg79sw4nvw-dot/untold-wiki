@@ -3,6 +3,8 @@
 UNTOLDのゲーム設計・実装仕様の正本リポジトリです。
 
 - 正本: `fg79sw4nvw-dot/untold-wiki` / `main`
+- AIエージェント入口: `AGENTS.md`
+- AI向け機械可読ルーター: `ai-manifest.json`
 - 各記事の本文: `pages/` 以下のMarkdown
 - ChatGPT運用ルーター: `pages/chatgpt-guide.md`
 - 公開Wikiのページ一覧: `pages.json`
@@ -13,7 +15,7 @@ UNTOLDのゲーム設計・実装仕様の正本リポジトリです。
 - 現在の実装状況: `pages/development/implementation-status.md`
 - 長期的な実装仕様・引き継ぎ: `pages/development/implementation.md`
 
-新しいチャットでは、まず `README.md` と `pages/chatgpt-guide.md` を確認し、その後は話題に直接関係する正本だけを参照する。
+新しいチャットでは、まず `README.md`、`ai-manifest.json`、`pages/chatgpt-guide.md` を確認し、その後は話題に直接関係する正本だけを参照する。AIエージェントが `AGENTS.md` を自動認識できる場合は、そこを入口にしてよい。
 
 ## 正本の優先順位
 
@@ -26,7 +28,7 @@ UNTOLDのゲーム設計・実装仕様の正本リポジトリです。
 5. 実装状況・開発引き継ぎページの要約
 6. 廃止済み・履歴・旧資料
 
-詳細な参照先は `pages/chatgpt-guide.md` を正とする。
+`pages/development/implementation.md` と個別の正本ページが同じ話題を扱う場合は、個別正本を優先する。詳細な参照先は `ai-manifest.json` と `pages/chatgpt-guide.md` を正とする。
 
 ## 公開Wikiの読み込み方式
 
@@ -35,6 +37,8 @@ UNTOLDのゲーム設計・実装仕様の正本リポジトリです。
 既存ページの本文を更新するときは該当Markdownを更新する。新しいページを追加・削除した場合は `pages.json` も更新する。
 
 `wiki.json` は旧方式との互換・履歴参照用として残すが、公開Wiki本文や現行仕様の正本としては扱わない。
+
+`ai-manifest.json` は参照先を決めるためのルーティング情報であり、ゲーム仕様本文の正本ではない。
 
 ## 更新ルール
 
