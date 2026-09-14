@@ -6,11 +6,14 @@
 
 ## 状態
 
-- 未統合件数: **0**
+- 未統合件数: **4**
 
 ## 未統合の確定事項
 
-現在なし。
+- D-20260915-01 | topic: No.55 | target: pages/cards/055-book-eating-rat-clue-grouping.md | [確定] 蜜漬け木の実は、プレイヤーが「使用」を実行した時点で主人公がいるマスに置く。書喰い鼠は図書館左上隅の本棚の陰から出現する。
+- D-20260915-02 | topic: No.55 | target: pages/cards/055-book-eating-rat-clue-grouping.md | [確定] マップ内ムービーでは、木の実設置後に主人公が待機位置へ自動移動し、その後書喰い鼠が木の実の位置まで移動して停止する。鼠の停止後、主人公が鼠の位置まで自動移動し、到着した時点でマップ内ムービーを終了する。
+- D-20260915-03 | topic: No.55 | target: pages/cards/055-book-eating-rat-clue-grouping.md,pages/story/protagonist-dialogue-log.md | [確定] 書喰い鼠が木の実の位置で停止した直後、主人公の心の声として `（……本当に出てきた。）` を表示する。心の声を閉じた後に主人公が鼠へ向かって自動移動する。
+- D-20260915-04 | topic: No.55 | target: pages/cards/055-book-eating-rat-clue-grouping.md | [確定] 蜜漬け木の実を置いた後の主人公の待機位置は、図書館1Fの閲覧机の左側付近とする。
 
 ## 記録形式
 
