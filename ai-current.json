@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-09-15",
+  "purpose": "Non-authoritative navigation pointers for the current UNTOLD development state.",
+  "currentMilestone": {
+    "label": "自由探索コアループ完成",
+    "source": "pages/development/free-exploration-core-milestone.md"
+  },
+  "sources": {
+    "implementationProgress": "pages/development/implementation-status.md",
+    "unresolvedDecisions": "pages/open-items.md",
+    "openingSequence": "pages/development/eld-opening-sequence.md"
+  },
+  "rules": [
+    "Use this file only to choose what to read next.",
+    "Detailed specifications remain in their canonical Markdown pages.",
+    "Do not infer missing specifications."
+  ]
+}
