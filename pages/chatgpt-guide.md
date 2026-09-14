@@ -1,13 +1,14 @@
 # ChatGPT運用ガイド
 
-ChatGPTがUNTOLD Wikiを参照・更新する際のルーター。毎回Wiki全体を読むのではなく、話題に必要な正本だけを読む。
+ChatGPTがUNTOLD Wikiを参照・更新する際のルーター。毎回Wiki全体を読むのではなく、話題に必要な正本だけを読む。機械可読の詳細ルーティングは `ai-manifest.json` を併用する。
 
 ## 基本参照順【確定】
 
 1. `README.md`
-2. このページ
-3. 話題に直接関係する正本
-4. 必要な補助ページ
+2. `ai-manifest.json`
+3. このページ
+4. 話題に直接関係する正本
+5. 必要な補助ページ
 
 単なる相づちや直前の発言だけで完結する確認では、Wiki参照を省略してよい。
 
@@ -18,16 +19,19 @@ ChatGPTがUNTOLD Wikiを参照・更新する際のルーター。毎回Wiki全�
 1. 同一会話で新しく確定した未反映事項
 2. 話題ごとの現行正本
 3. 設計思想・命名基準
-4. 個別ページの補助要約
+4. 個別ページの補助要約・索引
 5. 実装状況・開発引き継ぎの要約
 6. 廃止済み・履歴・旧資料
 
 `確定`は使用可、`暫定`は暫定として扱う。`案`・`候補`・`未確定`は採用済みにしない。`廃止`・`旧`・`履歴`は現行仕様の根拠にしない。
 
+`pages/development/implementation.md` は横断的な実装仕様・引き継ぎを含むが、同じ話題に個別の正本ページがある場合は個別正本を優先する。個別正本がまだない話題では、同ページ内で明示的に確定している内容を使用してよい。
+
 ## 話題別ルーティング【確定】
 
 - 設計判断・会話・演出・ストーリー：`pages/design-philosophy.md`
 - 主人公：`pages/story/protagonist.md`
+- ゲームマスター：`pages/story/gamemaster.md`
 - 新規命名：`pages/naming-guidelines.md`
 - 世界名・島・世界構成：`pages/world/world.md`、`pages/world/world-map.md`
 - 町名・町座標：`pages/world/towns.md`、`pages/world/terrain-allocation-final.md`
@@ -36,12 +40,30 @@ ChatGPTがUNTOLD Wikiを参照・更新する際のルーター。毎回Wiki全�
 - BOOK：`pages/systems/book.md`
 - 記録：`pages/systems/recording.md`
 - カード：`pages/systems/cards.md`、`pages/systems/cardization-rules.md`
+- フリーポケット：`pages/systems/free-pocket.md`
+- 時間・天候：`pages/systems/time-weather.md`
+- スペル：`pages/systems/spells.md`
+- 経済・ショップ：`pages/systems/economy.md`
+- エンカウント：`pages/systems/encounters.md`
+- イベント：`pages/systems/events.md`
 - UI：`pages/systems/gameplay-ui.md`
+- MAP表示：`pages/systems/map-display-basis.md`
+- チュートリアル：`pages/systems/tutorial-guidance.md`
 - マップ遷移：`pages/world/map-transitions.md`
 - 現行マイルストーン：`pages/development/free-exploration-core-milestone.md`
+- エルド開始直後：`pages/development/eld-opening-sequence.md`
 - 実装状況：`pages/development/implementation-status.md` とゲーム本体 `fg79sw4nvw-dot/untold-game`
+- 専用正本へまだ分離されていない横断実装仕様：`pages/development/implementation.md`
 
-実装状況ページは進捗記録であり、仕様の正本ではない。
+より細かい話題別ルーティングは `ai-manifest.json` を正とする。実装状況ページは進捗記録であり、仕様の正本ではない。
+
+## 文書の役割【確定】
+
+- 個別正本：具体仕様の根拠。
+- 索引・要約：入口として使う。矛盾時は個別正本を優先する。
+- 進捗：実装の現在地。設計仕様の根拠としては使わない。
+- 履歴：旧仕様。現行仕様の根拠にしない。
+- `AGENTS.md` / `ai-manifest.json` / このページ：参照先を決めるためのルーター。具体ゲーム仕様を二重管理しない。
 
 ## 旧名称エイリアス【運用用】
 
@@ -57,6 +79,8 @@ ChatGPTがUNTOLD Wikiを参照・更新する際のルーター。毎回Wiki全�
 - スカルド：町 / ブリガン島：島
 - ボナペ：町 / ペスカラ島：島
 
+旧名称を見つけても、互換用の技術IDまで機械的に改名しない。
+
 ## 現行地理の早見【確定】
 
 - 世界：オルバ
@@ -71,7 +95,18 @@ ChatGPTがUNTOLD Wikiを参照・更新する際のルーター。毎回Wiki全�
 - GitHub反映は原則として確定事項が10項目たまった時点で一括更新する。
 - 10項目未満でも、話題の区切り、会話終了時、明示的な更新指示がある場合はまとめて更新してよい。
 - 更新時は個別正本だけでなく `pages/open-items.md`、索引、名称参照、`pages.json` への影響も確認する。
+- 既存ページ本文だけを修正した場合は `wiki.json` を同期更新しない。
+- `ai-manifest.json` はルーティング構造が変わる場合に更新し、具体ゲーム仕様を重複保存しない。
 - 未確定仕様を自然さ・一般論・実装都合で補完しない。
+
+## Wiki監査時の最低チェック【確定】
+
+- `pages.json` と実ファイルの対応。
+- `ai-manifest.json` の参照先が現存するか。
+- `pages/open-items.md` に確定済み事項が残っていないか。
+- 旧名称・旧座標が現行正本へ誤って残っていないか。
+- 旧資料が現行正本より優先される導線になっていないか。
+- `implementation.md` や進捗ページが個別正本を上書きする扱いになっていないか。
 
 ## 旧資料の扱い【確定】
 
