@@ -44,6 +44,12 @@
       "primary": ["pages/home.md", "pages/design-philosophy.md"]
     },
     {
+      "topic": "foreshadowing, hidden confirmed truths, intentionally unresolved story truths, meaningful dialogue subtext",
+      "primary": ["pages/story/foreshadowing-ledger.md", "pages/design-philosophy.md"],
+      "secondary": ["pages/story/protagonist.md", "pages/story/gamemaster.md", "pages/open-items.md"],
+      "rule": "Do not convert OPEN items into confirmed truths by inference. Intentional clues should be linked to a tracked target, and NONCLUE items must not be retrofitted into foreshadowing without an explicit design change."
+    },
+    {
       "topic": "new names, naming review, naming consistency",
       "primary": ["pages/naming-guidelines.md"]
     },
