@@ -17,6 +17,9 @@
   "rules": [
     "Use this file only to choose what to read next.",
     "Detailed specifications remain in their canonical Markdown pages.",
-    "Do not infer missing specifications."
+    "Do not infer missing specifications.",
+    "Treat implementation progress separately from specification status.",
+    "For next-step decisions, verify the candidate topic in its canonical source through ai-index.json.",
+    "Follow linked continuation sources to the latest confirmed handoff before proposing a new design decision."
   ]
 }
