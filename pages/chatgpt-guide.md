@@ -75,6 +75,12 @@ ChatGPTがUNTOLD Wikiを参照・更新する際の運用正本。通常回答�
 - 実装状況：`pages/development/implementation-status.md` とゲーム本体 `fg79sw4nvw-dot/untold-game`
 - ゲーム開始からDay 2の必須導入：`pages/development/eld-opening-sequence.md`、`pages/cards/055-book-eating-rat.md`、`pages/development/day2-home-tutorial.md`、`pages/world/protagonist-home.md`
 
+## セリフ案の提示ルール【確定】
+
+- ChatGPTがUNTOLD用の**新しいセリフ案を作成して提示する場合は、必ず2候補を用意する**。
+- 2候補は、同じ目的・確定情報を守りつつ、言い回し、温度感、会話の運びなどに差を持たせ、比較して選べる形にする。
+- すでに確定済みのセリフをそのまま参照・再掲するだけの場合は、新規作成ではないため2候補化しない。
+
 ## 正本の重複を避ける【確定】
 
 一つの仕様事実には原則一つの正本を置く。
