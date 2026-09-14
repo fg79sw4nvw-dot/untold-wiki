@@ -13,6 +13,7 @@
 - ゲームマスター：`pages/story/gamemaster.md`
 - 世界設定：`pages/world/world.md`
 - エルド：`pages/world/eld.md`
+- 当面の開発マイルストーン：`pages/development/free-exploration-core-milestone.md`
 - エルド開始直後の確定進行：`pages/development/eld-opening-sequence.md`
 - ブック：`pages/systems/book.md`
 - カード化・指定カード：`pages/systems/cards.md`
