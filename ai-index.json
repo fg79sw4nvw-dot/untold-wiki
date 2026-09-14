@@ -6,6 +6,8 @@
     "Read AGENTS.md first.",
     "Use this index to choose the smallest relevant canonical source.",
     "Read ai-current.json only for current milestone / current-state navigation.",
+    "For resume / what-to-decide-next requests, verify the candidate topic against its canonical route before calling it unresolved.",
+    "Do not treat implementation state as specification status.",
     "Read ai-manifest.json only when routing is ambiguous, secondary references are needed, or legacy/authority rules matter.",
     "Read pages/chatgpt-guide.md for wiki governance, maintenance, audit, or routing-policy changes.",
     "Never treat this file as a game-specification source of truth."
@@ -36,7 +38,8 @@
     "gameplay-ui": ["pages/systems/gameplay-ui.md"],
     "map-display": ["pages/systems/map-display-basis.md"],
     "tutorial-guidance": ["pages/systems/tutorial-guidance.md"],
-    "opening-early-eld": ["pages/development/eld-opening-sequence.md"],
+    "opening-early-eld": ["pages/development/eld-opening-sequence.md", "pages/development/day2-home-tutorial.md", "pages/cards/055-book-eating-rat.md", "pages/world/protagonist-home.md"],
+    "required-introduction-day1-day2": ["pages/development/eld-opening-sequence.md", "pages/cards/055-book-eating-rat.md", "pages/development/day2-home-tutorial.md", "pages/world/protagonist-home.md"],
     "current-milestone-next-step": ["ai-current.json", "pages/development/free-exploration-core-milestone.md", "pages/open-items.md"],
     "implementation-state": ["ai-current.json", "pages/development/implementation-status.md", "fg79sw4nvw-dot/untold-game"],
     "unresolved-postponed": ["pages/open-items.md"],
@@ -74,6 +77,19 @@
       "時間・季節",
       "天候",
       "地形別の基準天候遷移【確定】"
+    ],
+    "pages/cards/055-book-eating-rat.md": [
+      "Day 1：初回の記録操作",
+      "Day 1：図書館から自宅へ",
+      "Day 1：自宅到着から就寝",
+      "Day 2：朝から図書館へ向かうまで",
+      "Day 2：正式な依頼",
+      "導入終了・自由探索開始【確定】"
+    ],
+    "pages/development/day2-home-tutorial.md": [
+      "Day 2朝の進行【確定】",
+      "携帯食の包み【確定】",
+      "チュートリアル上の目的【確定】"
     ]
   },
   "fallback": "If no route matches cleanly, consult ai-manifest.json instead of searching or reading the entire repository."
