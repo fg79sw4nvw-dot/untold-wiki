@@ -38,6 +38,7 @@
     {"slug":"free-pocket","category":"システム","path":"pages/systems/free-pocket.md"},
     {"slug":"card-template","category":"システム","path":"pages/systems/card-template.md","images":["assets/card-template-reference.jpg"]},
     {"slug":"recording","category":"システム","path":"pages/systems/recording.md"},
+    {"slug":"recipes","category":"システム","path":"pages/systems/recipes.md"},
     {"slug":"time-weather","category":"システム","path":"pages/systems/time-weather.md"},
     {"slug":"spells","category":"システム","path":"pages/systems/spells.md"},
     {"slug":"facilities","category":"システム","path":"pages/systems/facilities.md"},
