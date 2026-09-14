@@ -9,7 +9,10 @@
   "sources": {
     "implementationProgress": "pages/development/implementation-status.md",
     "unresolvedDecisions": "pages/open-items.md",
-    "openingSequence": "pages/development/eld-opening-sequence.md"
+    "openingSequence": "pages/development/eld-opening-sequence.md",
+    "day2HomeTutorial": "pages/development/day2-home-tutorial.md",
+    "firstQuest": "pages/cards/055-book-eating-rat.md",
+    "protagonistHome": "pages/world/protagonist-home.md"
   },
   "rules": [
     "Use this file only to choose what to read next.",
