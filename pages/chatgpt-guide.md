@@ -30,6 +30,7 @@ ChatGPTがUNTOLD Wikiを参照・更新する際のルーター。毎回Wiki全�
 ## 話題別ルーティング【確定】
 
 - 設計判断・会話・演出・ストーリー：`pages/design-philosophy.md`
+- 伏線・非公開設定・意図的な未確定真相・意味ありげな演出：`pages/story/foreshadowing-ledger.md`、`pages/design-philosophy.md`
 - 主人公：`pages/story/protagonist.md`
 - ゲームマスター：`pages/story/gamemaster.md`
 - 新規命名：`pages/naming-guidelines.md`
