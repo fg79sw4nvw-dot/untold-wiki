@@ -5,6 +5,7 @@
     {"slug":"home","category":"概要","path":"pages/home.md","images":["assets/game-screen-reference.webp"]},
     {"slug":"design-philosophy","category":"概要","path":"pages/design-philosophy.md"},
     {"slug":"naming-guidelines","category":"概要","path":"pages/naming-guidelines.md"},
+    {"slug":"chatgpt-guide","category":"管理","path":"pages/chatgpt-guide.md"},
     {"slug":"world","category":"世界","path":"pages/world/world.md"},
     {"slug":"world-map","category":"世界","path":"pages/world/world-map.md"},
     {"slug":"terrain-allocation-final","category":"世界","path":"pages/world/terrain-allocation-final.md"},
@@ -52,8 +53,10 @@
     {"slug":"card-082","category":"カード／人物","path":"pages/cards/082-kind-man.md","images":["assets/card-082-kind-man.webp"]},
     {"slug":"card-083","category":"カード／人物","path":"pages/cards/083-question-old-woman.md","images":["assets/card-083-question-old-woman.webp"]},
     {"slug":"open-items","category":"管理","path":"pages/open-items.md"},
-    {"slug":"eld-playthrough-goal","category":"開発","path":"pages/development/eld-playthrough-goal.md"},
+    {"slug":"free-exploration-core-milestone","category":"開発","path":"pages/development/free-exploration-core-milestone.md"},
+    {"slug":"eld-opening-sequence","category":"開発","path":"pages/development/eld-opening-sequence.md"},
     {"slug":"day2-home-tutorial","category":"開発","path":"pages/development/day2-home-tutorial.md"},
+    {"slug":"implementation-status","category":"開発","path":"pages/development/implementation-status.md"},
     {"slug":"implementation","category":"開発","path":"pages/development/implementation.md"}
   ]
 }
