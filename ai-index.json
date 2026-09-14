@@ -31,6 +31,7 @@
     "free-pocket-items-equipment": ["pages/systems/free-pocket.md"],
     "recording-information": ["pages/systems/recording.md"],
     "recipes-cooking": ["pages/systems/recipes.md", "pages/systems/facilities.md", "pages/systems/economy.md"],
+    "crafting-workshop": ["pages/systems/recipes.md", "pages/systems/facilities.md", "pages/systems/economy.md", "pages/systems/free-pocket.md"],
     "time-seasons-weather": ["pages/systems/time-weather.md"],
     "spells": ["pages/systems/spells.md"],
     "facilities-common": ["pages/systems/facilities.md", "pages/systems/economy.md"],
@@ -53,15 +54,15 @@
       "基本方針【確定】",
       "仕様の分担【確定】",
       "情報屋：共通利用仕様【確定】",
-      "食堂：共通利用仕様【確定】"
+      "食堂：共通利用仕様【確定】",
+      "作業場：共通利用仕様【確定】"
     ],
     "pages/systems/recipes.md": [
       "基本方針【確定】",
       "BOOKでの確認【確定】",
-      "レシピデータ【確定】",
-      "通常料理とレシピ限定料理【確定】",
-      "完成料理【確定】",
-      "料理効果【確定】"
+      "レシピ共通データ【確定】",
+      "料理レシピ【確定】",
+      "製作レシピ【確定】"
     ],
     "pages/systems/book.md": [
       "基本構造【確定】",
@@ -83,7 +84,7 @@
     ],
     "pages/systems/free-pocket.md": [
       "基本方針【確定】",
-      "容量・満杯時の挙動【確定】",
+      "容量・満杯時の挙動【確定／具体数未定】",
       "スタック方式【確定】",
       "入手方法【暫定】",
       "UI・操作構成【確定】",
