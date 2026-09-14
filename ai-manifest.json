@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "updatedAt": "2026-09-15",
   "repository": "fg79sw4nvw-dot/untold-wiki",
   "branch": "main",
@@ -32,6 +32,9 @@
       "pages/chatgpt-guide.md",
       "ai-manifest.json"
     ],
+    "specMaintenance": "pages/governance/spec-maintenance.md",
+    "criteriaRegistry": "governance/criteria-registry.json",
+    "criteriaReviewLedger": "governance/review-ledger.json",
     "publicIndex": "pages.json",
     "openItems": "pages/open-items.md",
     "implementationStatus": "pages/development/implementation-status.md",
@@ -39,6 +42,14 @@
     "implementationRepository": "fg79sw4nvw-dot/untold-game"
   },
   "routing": [
+    {
+      "topic": "wiki governance, specification maintenance, decision criteria, retroactive review, change impact",
+      "primary": [
+        "pages/governance/spec-maintenance.md",
+        "governance/criteria-registry.json",
+        "governance/review-ledger.json"
+      ]
+    },
     {
       "topic": "project overview and design principles",
       "primary": ["pages/home.md", "pages/design-philosophy.md"]
@@ -51,7 +62,8 @@
     },
     {
       "topic": "new names, naming review, naming consistency",
-      "primary": ["pages/naming-guidelines.md"]
+      "primary": ["pages/naming-guidelines.md"],
+      "secondary": ["governance/criteria-registry.json"]
     },
     {
       "topic": "world setting, Orba, islands, world structure",
@@ -225,6 +237,9 @@
   ],
   "updateRules": {
     "confirmedDecision": "Write it to the topic-specific canonical page. Also review open-items, indexes, aliases and related references.",
+    "singleSource": "Keep one canonical source per specification fact. Prefer links or routing references over duplicated confirmed summaries in management pages.",
+    "crossCuttingCriterion": "Register or revise the criterion in governance/criteria-registry.json with a stable id, scope, retroactiveMode and revision.",
+    "retroactiveCriterion": "When an added or changed criterion is applied or reviewed against existing content, record the affected, changed and exception paths in governance/review-ledger.json.",
     "newOrRemovedPublicPage": "Update pages.json.",
     "existingPageBodyChange": "Update the Markdown source only; do not synchronize wiki.json.",
     "legacyMaterial": "Keep it clearly marked as legacy/history and never silently promote it to current specification.",

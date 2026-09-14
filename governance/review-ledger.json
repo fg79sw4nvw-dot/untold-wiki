@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-09-15",
+  "purpose": "Track retroactive application of decision criteria to existing UNTOLD specifications. Append a review entry whenever a criterion is added, materially changed, or explicitly re-applied to existing content.",
+  "reviewStates": {
+    "complete": "All identified matching current pages were reviewed for this criterion revision.",
+    "partial": "Some matching pages remain unreviewed; do not claim the criterion has been fully propagated.",
+    "blocked": "A conflict requires a design decision before propagation can finish."
+  },
+  "reviews": [
+    {
+      "reviewId": "REV-20260915-001",
+      "date": "2026-09-15",
+      "reason": "Governance registry bootstrap and maintenance-layer deduplication",
+      "criterionIds": [
+        "GOV-SOURCE-001",
+        "DESIGN-EMOTION-001",
+        "DESIGN-MYSTERY-001",
+        "DESIGN-FORESHADOW-001",
+        "DESIGN-NPC-KNOWLEDGE-001",
+        "DESIGN-INFERENCE-001",
+        "DESIGN-PROTAGONIST-001",
+        "DESIGN-TONE-001",
+        "NAME-CORE-001",
+        "NAME-PLACE-001",
+        "NAME-CARD-001",
+        "NAME-CHECK-001"
+      ],
+      "criterionRegistryRevision": 1,
+      "mode": "baseline-import",
+      "state": "complete",
+      "reviewedPaths": [
+        "AGENTS.md",
+        "README.md",
+        "ai-manifest.json",
+        "pages/chatgpt-guide.md",
+        "pages/open-items.md",
+        "pages/design-philosophy.md",
+        "pages/naming-guidelines.md",
+        "pages/world/towns.md"
+      ],
+      "changedPaths": [
+        "README.md",
+        "ai-manifest.json",
+        "pages/chatgpt-guide.md",
+        "pages/open-items.md",
+        "pages.json",
+        "pages/governance/spec-maintenance.md",
+        "governance/criteria-registry.json",
+        "governance/review-ledger.json"
+      ],
+      "exceptions": [
+        "AGENTS.md remains unchanged; existing bootstrap already routes agents through README.md, ai-manifest.json and pages/chatgpt-guide.md, which now contain the governance route."
+      ],
+      "notes": "Existing design and naming criteria were registered without changing their substantive rule text. The maintenance layer was deduplicated so confirmed game facts remain in topical canonical pages. No substantive game-design decision was changed by this review."
+    }
+  ]
+}

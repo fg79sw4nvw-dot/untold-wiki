@@ -7,6 +7,9 @@ UNTOLDのゲーム設計・実装仕様の正本リポジトリです。
 - AI向け機械可読ルーター: `ai-manifest.json`
 - 各記事の本文: `pages/` 以下のMarkdown
 - ChatGPT運用ルーター: `pages/chatgpt-guide.md`
+- 仕様保守・変更ルール: `pages/governance/spec-maintenance.md`
+- 横断判断基準レジストリ: `governance/criteria-registry.json`
+- 基準の遡及適用履歴: `governance/review-ledger.json`
 - 公開Wikiのページ一覧: `pages.json`
 - 画像・視覚基準: `assets/`
 - 設計思想: `pages/design-philosophy.md`
@@ -16,6 +19,8 @@ UNTOLDのゲーム設計・実装仕様の正本リポジトリです。
 - 長期的な実装仕様・引き継ぎ: `pages/development/implementation.md`
 
 新しいチャットでは、まず `README.md`、`ai-manifest.json`、`pages/chatgpt-guide.md` を確認し、その後は話題に直接関係する正本だけを参照する。AIエージェントが `AGENTS.md` を自動認識できる場合は、そこを入口にしてよい。
+
+仕様の新規設計・変更・監査を行う場合は、必要に応じて `governance/criteria-registry.json` から適用される横断基準も確認する。
 
 ## 正本の優先順位
 
@@ -29,6 +34,17 @@ UNTOLDのゲーム設計・実装仕様の正本リポジトリです。
 6. 廃止済み・履歴・旧資料
 
 `pages/development/implementation.md` と個別の正本ページが同じ話題を扱う場合は、個別正本を優先する。詳細な参照先は `ai-manifest.json` と `pages/chatgpt-guide.md` を正とする。
+
+## 変更しやすいWikiにするための原則
+
+- 一つの仕様事実には、原則として一つの正本を置く。
+- 管理ページ、索引、進捗ページへ同じ確定内容を必要以上に複製しない。
+- 索引や要約は「どの正本を見るか」を示す役割を優先する。
+- 横断的な判断基準には `governance/criteria-registry.json` で固定ID・適用範囲・遡及モードを持たせる。
+- 新しい判断基準を既存仕様へ適用・監査した履歴は `governance/review-ledger.json` に残す。
+- 基準を登録しただけで、既存仕様へ適用済みと扱わない。
+
+詳細は `pages/governance/spec-maintenance.md` を正とする。
 
 ## 公開Wikiの読み込み方式
 
@@ -46,7 +62,8 @@ UNTOLDのゲーム設計・実装仕様の正本リポジトリです。
 - 未確定事項を勝手に確定しない。
 - イベント、会話、演出、ストーリー、主人公の反応などは `pages/design-philosophy.md` を参照する。
 - 人物名、地名、組織名、種族名、カード名などの新規命名は `pages/naming-guidelines.md` を参照する。
-- ChatGPTの参照順、旧資料の扱い、名称エイリアスは `pages/chatgpt-guide.md` を参照する。
+- ChatGPTの参照順、旧資料の扱い、名称参照は `pages/chatgpt-guide.md` を参照する。
+- 横断基準を追加・変更する場合は `governance/criteria-registry.json` と `pages/governance/spec-maintenance.md` に従う。
 - GitHubへの仕様反映は原則として確定事項を10項目ためて一括更新する。10項目未満でも、話題の区切り、会話終了時、明示的な更新指示がある場合はまとめて更新してよい。
 - 一括更新では個別正本だけでなく、`pages/open-items.md`、索引、名称参照、`pages.json` への影響も確認する。
 - 新規ページを追加する場合は `pages.json` に `slug` / `category` / `path` を追加する。

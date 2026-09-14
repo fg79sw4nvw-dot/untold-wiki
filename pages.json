@@ -6,6 +6,7 @@
     {"slug":"design-philosophy","category":"概要","path":"pages/design-philosophy.md"},
     {"slug":"naming-guidelines","category":"概要","path":"pages/naming-guidelines.md"},
     {"slug":"chatgpt-guide","category":"管理","path":"pages/chatgpt-guide.md"},
+    {"slug":"spec-maintenance","category":"管理","path":"pages/governance/spec-maintenance.md"},
     {"slug":"world","category":"世界","path":"pages/world/world.md"},
     {"slug":"world-map","category":"世界","path":"pages/world/world-map.md"},
     {"slug":"terrain-allocation-final","category":"世界","path":"pages/world/terrain-allocation-final.md"},
