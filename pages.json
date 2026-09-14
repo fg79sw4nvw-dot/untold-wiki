@@ -10,7 +10,6 @@
     {"slug":"world-map","category":"世界","path":"pages/world/world-map.md"},
     {"slug":"terrain-allocation-final","category":"世界","path":"pages/world/terrain-allocation-final.md"},
     {"slug":"region-mask","category":"世界","path":"pages/world/region-mask.md"},
-    {"slug":"world-regions-routes","category":"世界","path":"pages/world/world-regions-routes.md"},
     {"slug":"world-rivers-lakes-crossings","category":"世界","path":"pages/world/world-rivers-lakes-crossings.md"},
     {"slug":"map-transitions","category":"世界","path":"pages/world/map-transitions.md"},
     {"slug":"towns","category":"世界","path":"pages/world/towns.md"},
@@ -57,6 +56,7 @@
     {"slug":"eld-opening-sequence","category":"開発","path":"pages/development/eld-opening-sequence.md"},
     {"slug":"day2-home-tutorial","category":"開発","path":"pages/development/day2-home-tutorial.md"},
     {"slug":"implementation-status","category":"開発","path":"pages/development/implementation-status.md"},
-    {"slug":"implementation","category":"開発","path":"pages/development/implementation.md"}
+    {"slug":"implementation","category":"開発","path":"pages/development/implementation.md"},
+    {"slug":"world-regions-routes","category":"履歴","path":"pages/world/world-regions-routes.md"}
   ]
 }
