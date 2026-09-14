@@ -50,6 +50,7 @@
     {"slug":"card-002","category":"カード／遺物","path":"pages/cards/002-closed-box.md","images":["assets/card-002-closed-box.webp"]},
     {"slug":"card-003","category":"カード／遺物","path":"pages/cards/003-rainless-stone.md","images":["assets/card-003-rainless-stone.webp"]},
     {"slug":"card-055","category":"カード／生物","path":"pages/cards/055-book-eating-rat.md","images":["assets/card-055-book-eating-rat.webp"]},
+    {"slug":"card-055-clue-grouping","category":"カード／生物","path":"pages/cards/055-book-eating-rat-clue-grouping.md"},
     {"slug":"card-056","category":"カード／生物","path":"pages/cards/056-mud-boar.md","images":["assets/card-056-mud-boar.webp"]},
     {"slug":"card-082","category":"カード／人物","path":"pages/cards/082-kind-man.md","images":["assets/card-082-kind-man.webp"]},
     {"slug":"card-083","category":"カード／人物","path":"pages/cards/083-question-old-woman.md","images":["assets/card-083-question-old-woman.webp"]},
