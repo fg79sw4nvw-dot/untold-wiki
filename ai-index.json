@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-09-15",
+  "purpose": "Fast AI routing index for UNTOLD Wiki. Non-authoritative. Use it to jump to the canonical source without reading the whole wiki.",
+  "readStrategy": [
+    "Read AGENTS.md first.",
+    "Use this index to choose the smallest relevant canonical source.",
+    "Read ai-current.json only for current milestone / current-state navigation.",
+    "Read ai-manifest.json only when routing is ambiguous, secondary references are needed, or legacy/authority rules matter.",
+    "Read pages/chatgpt-guide.md for wiki governance, maintenance, audit, or routing-policy changes.",
+    "Never treat this file as a game-specification source of truth."
+  ],
+  "routes": {
+    "wiki-governance": ["pages/governance/spec-maintenance.md", "governance/criteria-registry.json", "governance/review-ledger.json"],
+    "overview-design": ["pages/home.md", "pages/design-philosophy.md"],
+    "foreshadowing-hidden-truths": ["pages/story/foreshadowing-ledger.md", "pages/design-philosophy.md"],
+    "naming": ["pages/naming-guidelines.md"],
+    "world-islands-orba": ["pages/world/world.md", "pages/world/world-map.md"],
+    "terrain-passability": ["pages/world/terrain-allocation-final.md"],
+    "regions": ["pages/world/region-mask.md"],
+    "rivers-lakes-roads-bridges": ["pages/world/world-rivers-lakes-crossings.md", "assets/elden-terrain-mask-final.svg"],
+    "towns-names-coordinates": ["pages/world/towns.md", "pages/world/terrain-allocation-final.md"],
+    "eld": ["pages/world/eld.md", "pages/world/eld-layout.md", "pages/world/eld-npcs.md", "pages/world/eld-npc-movement.md", "pages/world/protagonist-home.md"],
+    "map-transitions": ["pages/world/map-transitions.md"],
+    "protagonist": ["pages/story/protagonist.md"],
+    "gamemaster": ["pages/story/gamemaster.md"],
+    "book": ["pages/systems/book.md"],
+    "cards-cardization": ["pages/systems/cards.md", "pages/systems/cardization-rules.md"],
+    "free-pocket-items-equipment": ["pages/systems/free-pocket.md"],
+    "recording-information": ["pages/systems/recording.md"],
+    "time-seasons-weather": ["pages/systems/time-weather.md"],
+    "spells": ["pages/systems/spells.md"],
+    "economy-shops": ["pages/systems/economy.md"],
+    "encounters": ["pages/systems/encounters.md"],
+    "events": ["pages/systems/events.md"],
+    "gameplay-ui": ["pages/systems/gameplay-ui.md"],
+    "map-display": ["pages/systems/map-display-basis.md"],
+    "tutorial-guidance": ["pages/systems/tutorial-guidance.md"],
+    "opening-early-eld": ["pages/development/eld-opening-sequence.md"],
+    "current-milestone-next-step": ["ai-current.json", "pages/development/free-exploration-core-milestone.md", "pages/open-items.md"],
+    "implementation-state": ["ai-current.json", "pages/development/implementation-status.md", "fg79sw4nvw-dot/untold-game"],
+    "unresolved-postponed": ["pages/open-items.md"],
+    "fallback-implementation-details": ["pages/development/implementation.md"]
+  },
+  "sectionHints": {
+    "pages/systems/book.md": [
+      "基本構造【確定】",
+      "ページ構成【基準として確定】",
+      "タイトル「UNTOLD」の意味【方向性確定／具体的な開示方法未定】",
+      "1ページ目タイトルページ【確定／装飾一部未定】",
+      "BOOKを開く位置【確定】",
+      "BOOKを閉じる操作【確定】"
+    ],
+    "pages/systems/recording.md": [
+      "基本",
+      "記録タイミング【確定】",
+      "「思い出す」【確定】",
+      "記録単位と表示【確定】",
+      "会話中の記録UI【確定】",
+      "システム文と記録【確定】",
+      "NPC会話以外の記録UI【確定】"
+    ],
+    "pages/systems/free-pocket.md": [
+      "基本方針【確定】",
+      "容量・満杯時の挙動【確定】",
+      "スタック方式【確定】",
+      "入手方法【暫定】",
+      "UI・操作構成【確定】",
+      "スペルカード【確定】",
+      "食料【確定】",
+      "装備【確定】"
+    ],
+    "pages/systems/time-weather.md": [
+      "時間・季節",
+      "天候",
+      "地形別の基準天候遷移【確定】"
+    ]
+  },
+  "fallback": "If no route matches cleanly, consult ai-manifest.json instead of searching or reading the entire repository."
+}
