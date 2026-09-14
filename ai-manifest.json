@@ -10,7 +10,7 @@
   ],
   "routingUsage": {
     "normal": "AGENTS.md -> ai-index.json -> directly relevant canonical page(s)",
-    "currentState": "AGENTS.md -> ai-current.json -> referenced current-state source",
+    "currentState": "AGENTS.md -> ai-current.json -> referenced current-state source -> canonical route for the candidate topic",
     "ambiguousOrCrossCutting": "AGENTS.md -> ai-index.json -> ai-manifest.json -> canonical page(s)",
     "governanceOrAudit": "AGENTS.md -> pages/chatgpt-guide.md -> pages/governance/spec-maintenance.md and required registries"
   },
@@ -202,25 +202,32 @@
     },
     {
       "topic": "opening sequence and early Eld progression",
-      "primary": ["pages/development/eld-opening-sequence.md"],
-      "secondary": ["pages/story/protagonist.md", "pages/story/gamemaster.md", "pages/systems/events.md"]
+      "primary": [
+        "pages/development/eld-opening-sequence.md",
+        "pages/cards/055-book-eating-rat.md",
+        "pages/development/day2-home-tutorial.md",
+        "pages/world/protagonist-home.md"
+      ],
+      "secondary": ["pages/story/protagonist.md", "pages/story/gamemaster.md", "pages/systems/events.md"],
+      "rule": "The mandatory introduction spans multiple canonical pages. Follow later-page replacement notes and forward references through Day 2 formal quest registration before identifying the next design boundary."
     },
     {
       "topic": "current milestone and what to decide next",
       "context": "ai-current.json",
       "primary": ["pages/development/free-exploration-core-milestone.md"],
-      "secondary": ["pages/open-items.md"]
+      "secondary": ["pages/open-items.md"],
+      "rule": "Do not infer an unresolved design decision from implementation-status or missing game code. Use open-items as a candidate list, then route the candidate topic through ai-index.json and verify its canonical page. For the current early-game flow, also follow the sources listed in ai-current.json to the last confirmed handoff."
     },
     {
       "topic": "current implementation state",
       "context": "ai-current.json",
       "primary": ["pages/development/implementation-status.md", "fg79sw4nvw-dot/untold-game"],
-      "rule": "The status page is progress documentation, not a game-design source of truth. Verify the game repository when current implementation matters."
+      "rule": "The status page is progress documentation, not a game-design source of truth. Unimplemented, unconnected, or missing code does not mean the specification is undecided. Verify topical canonical pages separately when specification status matters, and verify the game repository when current implementation matters."
     },
     {
       "topic": "unresolved or postponed decisions",
       "primary": ["pages/open-items.md"],
-      "rule": "An item listed here can be stale; if a topical canonical page already marks it confirmed, the topical page wins and open-items should be cleaned up."
+      "rule": "An item listed here can be stale; if a topical canonical page already marks it confirmed, the topical page wins and open-items should be cleaned up. Absence from open-items is not by itself proof of confirmation; use the topical canonical page."
     }
   ],
   "legacyOrNonAuthoritative": [
@@ -265,6 +272,7 @@
     "existingPageBodyChange": "Update the Markdown source only; do not synchronize wiki.json.",
     "legacyMaterial": "Keep it clearly marked as legacy/history and never silently promote it to current specification.",
     "batching": "As a normal conversation workflow, batch GitHub specification updates after roughly 10 confirmed items, or earlier at a topic boundary, conversation end, or explicit update request.",
-    "implementationState": "When the user asks what is actually implemented now, verify fg79sw4nvw-dot/untold-game when needed."
+    "implementationState": "When the user asks what is actually implemented now, verify fg79sw4nvw-dot/untold-game when needed. Never convert implementation gaps into unresolved design decisions without checking the topical canonical source.",
+    "resumeNextStep": "For development resume or next-decision requests, use ai-current.json for navigation, route each candidate through ai-index.json, follow linked continuation pages to the last confirmed handoff, then propose only the first genuinely unresolved boundary."
   }
 }
