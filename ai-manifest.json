@@ -1,0 +1,228 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-09-15",
+  "repository": "fg79sw4nvw-dot/untold-wiki",
+  "branch": "main",
+  "purpose": "AI routing metadata for UNTOLD Wiki. This file does not replace the topical specification pages.",
+  "bootstrap": [
+    "AGENTS.md",
+    "README.md",
+    "pages/chatgpt-guide.md"
+  ],
+  "authorityOrder": [
+    "newly confirmed decisions in the current conversation that are not yet committed",
+    "topic-specific current canonical page",
+    "cross-cutting design or naming rules",
+    "supporting summaries and indexes",
+    "implementation status or implementation handoff summaries",
+    "legacy, history, compatibility material"
+  ],
+  "statusSemantics": {
+    "確定": "usable as current confirmed specification",
+    "暫定": "usable only as provisional specification and must be described as provisional",
+    "案": "not adopted",
+    "候補": "not adopted",
+    "未確定": "not adopted; do not fill in by inference",
+    "廃止": "not current specification",
+    "旧": "history or compatibility only"
+  },
+  "sourceRoles": {
+    "router": [
+      "AGENTS.md",
+      "pages/chatgpt-guide.md",
+      "ai-manifest.json"
+    ],
+    "publicIndex": "pages.json",
+    "openItems": "pages/open-items.md",
+    "implementationStatus": "pages/development/implementation-status.md",
+    "implementationHandoff": "pages/development/implementation.md",
+    "implementationRepository": "fg79sw4nvw-dot/untold-game"
+  },
+  "routing": [
+    {
+      "topic": "project overview and design principles",
+      "primary": ["pages/home.md", "pages/design-philosophy.md"]
+    },
+    {
+      "topic": "new names, naming review, naming consistency",
+      "primary": ["pages/naming-guidelines.md"]
+    },
+    {
+      "topic": "world setting, Orba, islands, world structure",
+      "primary": ["pages/world/world.md", "pages/world/world-map.md"]
+    },
+    {
+      "topic": "terrain, terrain ids, town coordinates, passability",
+      "primary": ["pages/world/terrain-allocation-final.md"],
+      "secondary": ["pages/world/world-map.md", "pages/world/towns.md"]
+    },
+    {
+      "topic": "region ids and region mask",
+      "primary": ["pages/world/region-mask.md"],
+      "secondary": ["pages/world/terrain-allocation-final.md"]
+    },
+    {
+      "topic": "rivers, lakes, roads, bridges, mountain crossings",
+      "primary": ["pages/world/world-rivers-lakes-crossings.md", "assets/elden-terrain-mask-final.svg"],
+      "secondary": ["pages/world/terrain-allocation-final.md", "pages/world/region-mask.md"]
+    },
+    {
+      "topic": "town names and town coordinates",
+      "primary": ["pages/world/towns.md", "pages/world/terrain-allocation-final.md"],
+      "secondary": ["pages/world/world-map.md"]
+    },
+    {
+      "topic": "Eld city, layout, npcs, npc movement, protagonist home",
+      "primary": [
+        "pages/world/eld.md",
+        "pages/world/eld-layout.md",
+        "pages/world/eld-npcs.md",
+        "pages/world/eld-npc-movement.md",
+        "pages/world/protagonist-home.md"
+      ]
+    },
+    {
+      "topic": "specific town details",
+      "primary": [
+        "pages/world/regna.md",
+        "pages/world/morgrey.md",
+        "pages/world/south-port.md",
+        "pages/world/north-island-town.md",
+        "pages/world/east-island-town.md",
+        "pages/world/north-town.md",
+        "pages/world/west-forest-town.md",
+        "pages/world/lakeside-town.md",
+        "pages/world/highland-town.md"
+      ],
+      "secondary": ["pages/world/towns.md"]
+    },
+    {
+      "topic": "map transitions",
+      "primary": ["pages/world/map-transitions.md"],
+      "secondary": ["pages/systems/gameplay-ui.md"]
+    },
+    {
+      "topic": "protagonist personality, inner voice, dialogue",
+      "primary": ["pages/story/protagonist.md"],
+      "secondary": ["pages/story/protagonist-dialogue-log.md", "pages/design-philosophy.md"]
+    },
+    {
+      "topic": "game master personality, dialogue, first message",
+      "primary": ["pages/story/gamemaster.md"],
+      "secondary": ["pages/design-philosophy.md", "pages/systems/book.md"]
+    },
+    {
+      "topic": "BOOK",
+      "primary": ["pages/systems/book.md"],
+      "secondary": ["pages/systems/gameplay-ui.md", "pages/story/gamemaster.md"]
+    },
+    {
+      "topic": "card system and cardization",
+      "primary": ["pages/systems/cards.md", "pages/systems/cardization-rules.md"],
+      "secondary": ["pages/systems/card-template.md"],
+      "pathPrefix": "pages/cards/"
+    },
+    {
+      "topic": "free pocket, items, equipment inventory",
+      "primary": ["pages/systems/free-pocket.md"],
+      "secondary": ["pages/development/implementation.md"]
+    },
+    {
+      "topic": "recording and information collection",
+      "primary": ["pages/systems/recording.md"],
+      "secondary": ["pages/systems/book.md"]
+    },
+    {
+      "topic": "time, seasons, weather",
+      "primary": ["pages/systems/time-weather.md"]
+    },
+    {
+      "topic": "spells",
+      "primary": ["pages/systems/spells.md"]
+    },
+    {
+      "topic": "economy, shops, currency",
+      "primary": ["pages/systems/economy.md"],
+      "secondary": ["pages/development/implementation.md"]
+    },
+    {
+      "topic": "crafting, recipes, implementation-wide gameplay details without a dedicated page",
+      "primary": ["pages/development/implementation.md"],
+      "rule": "If a dedicated topical page also covers the same fact, the dedicated topical page wins."
+    },
+    {
+      "topic": "encounters",
+      "primary": ["pages/systems/encounters.md"]
+    },
+    {
+      "topic": "events and event execution",
+      "primary": ["pages/systems/events.md"],
+      "secondary": ["pages/design-philosophy.md"]
+    },
+    {
+      "topic": "gameplay ui",
+      "primary": ["pages/systems/gameplay-ui.md"],
+      "secondary": ["pages/systems/map-display-basis.md", "pages/systems/book.md"]
+    },
+    {
+      "topic": "map display and exploration recording",
+      "primary": ["pages/systems/map-display-basis.md"],
+      "secondary": ["pages/world/world-map.md", "pages/systems/recording.md"]
+    },
+    {
+      "topic": "tutorial and guidance",
+      "primary": ["pages/systems/tutorial-guidance.md"],
+      "secondary": ["pages/development/day2-home-tutorial.md", "pages/development/eld-opening-sequence.md"]
+    },
+    {
+      "topic": "opening sequence and early Eld progression",
+      "primary": ["pages/development/eld-opening-sequence.md"],
+      "secondary": ["pages/story/protagonist.md", "pages/story/gamemaster.md", "pages/systems/events.md"]
+    },
+    {
+      "topic": "current milestone and what to decide next",
+      "primary": ["pages/development/free-exploration-core-milestone.md"],
+      "secondary": ["pages/open-items.md"]
+    },
+    {
+      "topic": "current implementation state",
+      "primary": ["pages/development/implementation-status.md", "fg79sw4nvw-dot/untold-game"],
+      "rule": "The status page is progress documentation, not a game-design source of truth. Verify the game repository when current implementation matters."
+    },
+    {
+      "topic": "unresolved or postponed decisions",
+      "primary": ["pages/open-items.md"],
+      "rule": "An item listed here can be stale; if a topical canonical page already marks it confirmed, the topical page wins and open-items should be cleaned up."
+    }
+  ],
+  "legacyOrNonAuthoritative": [
+    {
+      "path": "wiki.json",
+      "role": "legacy compatibility and history",
+      "useAsCurrentSpec": false
+    },
+    {
+      "path": "assets/world-map-v11-rle.json",
+      "role": "legacy map data",
+      "useAsCurrentSpec": false
+    },
+    {
+      "path": "pages/world/world-regions-routes.md",
+      "role": "legacy v11 history page",
+      "useAsCurrentSpec": false
+    },
+    {
+      "path": "pages/development/eld-playthrough-goal.md",
+      "role": "retired milestone",
+      "useAsCurrentSpec": false
+    }
+  ],
+  "updateRules": {
+    "confirmedDecision": "Write it to the topic-specific canonical page. Also review open-items, indexes, aliases and related references.",
+    "newOrRemovedPublicPage": "Update pages.json.",
+    "existingPageBodyChange": "Update the Markdown source only; do not synchronize wiki.json.",
+    "legacyMaterial": "Keep it clearly marked as legacy/history and never silently promote it to current specification.",
+    "batching": "As a normal conversation workflow, batch GitHub specification updates after roughly 10 confirmed items, or earlier at a topic boundary, conversation end, or explicit update request.",
+    "implementationState": "When the user asks what is actually implemented now, verify fg79sw4nvw-dot/untold-game when needed."
+  }
+}
