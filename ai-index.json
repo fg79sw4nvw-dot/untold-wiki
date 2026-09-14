@@ -32,7 +32,8 @@
     "recording-information": ["pages/systems/recording.md"],
     "time-seasons-weather": ["pages/systems/time-weather.md"],
     "spells": ["pages/systems/spells.md"],
-    "economy-shops": ["pages/systems/economy.md"],
+    "facilities-common": ["pages/systems/facilities.md", "pages/systems/economy.md"],
+    "economy-shops": ["pages/systems/economy.md", "pages/systems/facilities.md"],
     "encounters": ["pages/systems/encounters.md"],
     "events": ["pages/systems/events.md"],
     "gameplay-ui": ["pages/systems/gameplay-ui.md"],
@@ -47,6 +48,10 @@
     "fallback-implementation-details": ["pages/development/implementation.md"]
   },
   "sectionHints": {
+    "pages/systems/facilities.md": [
+      "基本方針【確定】",
+      "仕様の分担【確定】"
+    ],
     "pages/systems/book.md": [
       "基本構造【確定】",
       "ページ構成【基準として確定】",
