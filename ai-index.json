@@ -38,8 +38,9 @@
     "gameplay-ui": ["pages/systems/gameplay-ui.md"],
     "map-display": ["pages/systems/map-display-basis.md"],
     "tutorial-guidance": ["pages/systems/tutorial-guidance.md"],
-    "opening-early-eld": ["pages/development/eld-opening-sequence.md", "pages/development/day2-home-tutorial.md", "pages/cards/055-book-eating-rat.md", "pages/world/protagonist-home.md"],
-    "required-introduction-day1-day2": ["pages/development/eld-opening-sequence.md", "pages/cards/055-book-eating-rat.md", "pages/development/day2-home-tutorial.md", "pages/world/protagonist-home.md"],
+    "opening-early-eld": ["pages/development/eld-opening-sequence.md", "pages/development/day2-home-tutorial.md", "pages/cards/055-book-eating-rat.md", "pages/cards/055-book-eating-rat-clue-grouping.md", "pages/world/protagonist-home.md"],
+    "required-introduction-day1-day2": ["pages/development/eld-opening-sequence.md", "pages/cards/055-book-eating-rat.md", "pages/cards/055-book-eating-rat-clue-grouping.md", "pages/development/day2-home-tutorial.md", "pages/world/protagonist-home.md"],
+    "card-055-clue-grouping": ["pages/cards/055-book-eating-rat-clue-grouping.md", "pages/systems/recording.md", "pages/cards/055-book-eating-rat.md"],
     "current-milestone-next-step": ["ai-current.json", "pages/development/free-exploration-core-milestone.md", "pages/open-items.md"],
     "implementation-state": ["ai-current.json", "pages/development/implementation-status.md", "fg79sw4nvw-dot/untold-game"],
     "unresolved-postponed": ["pages/open-items.md"],
@@ -61,7 +62,8 @@
       "記録単位と表示【確定】",
       "会話中の記録UI【確定】",
       "システム文と記録【確定】",
-      "NPC会話以外の記録UI【確定】"
+      "NPC会話以外の記録UI【確定】",
+      "内部データとヒントの関係【確定】"
     ],
     "pages/systems/free-pocket.md": [
       "基本方針【確定】",
@@ -85,6 +87,10 @@
       "Day 2：朝から図書館へ向かうまで",
       "Day 2：正式な依頼",
       "導入終了・自由探索開始【確定】"
+    ],
+    "pages/cards/055-book-eating-rat-clue-grouping.md": [
+      "司書由来の重要情報【確定】",
+      "共通ルールとの関係【確定】"
     ],
     "pages/development/day2-home-tutorial.md": [
       "Day 2朝の進行【確定】",
