@@ -27,6 +27,7 @@
     {"slug":"eld-npc-movement","category":"世界","path":"pages/world/eld-npc-movement.md"},
     {"slug":"gamemaster","category":"ストーリー","path":"pages/story/gamemaster.md"},
     {"slug":"protagonist","category":"ストーリー","path":"pages/story/protagonist.md"},
+    {"slug":"protagonist-dialogue-log","category":"ストーリー","path":"pages/story/protagonist-dialogue-log.md"},
     {"slug":"book","category":"システム","path":"pages/systems/book.md"},
     {"slug":"card-system","category":"システム","path":"pages/systems/cards.md"},
     {"slug":"free-pocket","category":"システム","path":"pages/systems/free-pocket.md"},
