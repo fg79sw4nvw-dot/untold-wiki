@@ -5,6 +5,7 @@
     {"slug":"home","category":"概要","path":"pages/home.md","images":["assets/game-screen-reference.webp"]},
     {"slug":"design-philosophy","category":"概要","path":"pages/design-philosophy.md"},
     {"slug":"naming-guidelines","category":"概要","path":"pages/naming-guidelines.md"},
+    {"slug":"promotion-daily-log","category":"プロモーション","path":"pages/promotion/promotion-daily-log.md"},
     {"slug":"chatgpt-guide","category":"管理","path":"pages/chatgpt-guide.md"},
     {"slug":"spec-maintenance","category":"管理","path":"pages/governance/spec-maintenance.md"},
     {"slug":"world","category":"世界","path":"pages/world/world.md"},
