@@ -6,19 +6,11 @@
 
 ## 状態
 
-- 未統合件数: **9**
+- 未統合件数: **0**
 
 ## 未統合の確定事項
 
-- D-20260915-01 | topic: 情報アーキテクチャ | target: pages/story/information-architecture.md | section: 情報ノード | op: merge | [確定] 情報ネットワークの基本ノードは `TRUTH / INFO / OBSERVATION / QUESTION / INFERENCE` の5種類とする。`CLUE` は同格の情報ノードにはせず、INFO・OBSERVATION・台詞・名称などがHIDDEN/OPEN/TRUTH等を意図的に示唆していることを表す制作側メタ情報・接続情報として扱い、既存の `pages/story/foreshadowing-ledger.md` のCLUE管理と接続する。未確定の真相はTRUTHとして扱わず、既存のOPEN管理を維持する。
-- D-20260915-02 | topic: 情報アーキテクチャ | target: pages/story/information-architecture.md | section: 接続関係 | op: merge | [確定] 情報ノード間の基本接続は `raises / supports / contradicts / resolves / recontextualizes` の5種類とする。`supports` には `strength: weak / normal / strong` の強度属性を持たせ、`suggests` と `confirms` は独立接続にしない。必須前提は `required: true` の属性で表し、`requires` は独立接続にしない。`misleads` は通常の情報接続ではなく制作側メタ情報として扱い、CLUE等の制作管理と同様に運用する。
-- D-20260915-03 | topic: 情報アーキテクチャ | target: pages/story/information-architecture.md | section: NPC知識モデル | op: merge | [確定] NPCの情報状態は「知識状態」と「開示姿勢」を分離して管理する。知識状態は `knows / partial / suspects / mistaken / unknown` の5種類とし、開示姿勢は `open / guarded / concealed` の3種類とする。`知っているが隠している` は単独の知識状態にせず、例として `knows + concealed` の組み合わせで表現する。これにより、同じ知識状態でも人物ごとに話し方・開示量を変えられる構造とする。
-- D-20260915-04 | topic: 情報アーキテクチャ | target: pages/story/information-architecture.md | section: プレイヤー認識段階 | op: merge | [確定] プレイヤー認識段階は制作側の内部設計指標として5段階で管理する。段階は `未認識 / 違和感 / 仮説形成 / 有力化 / 確定` とする。ゲーム画面へ数値や段階名をそのまま表示するものではなく、各TRUTH・QUESTION等について「その時点でプレイヤーにどこまで気づかせたいか」を設計・確認するために使用する。
-- D-20260915-05 | topic: 情報アーキテクチャ | target: pages/story/information-architecture.md | section: 個別ネットワークの記録形式 | op: merge | [確定] 個別情報ネットワークは、原則として「1つの主要QUESTION」を中心単位として管理する。各ネットワークには固有の `NET-xxx` IDを付け、中心QUESTION、到達先となるTRUTH/HIDDEN/OPEN、現在のプレイヤー認識目標、関連INFO・OBSERVATION・INFERENCE、ノード間接続、関連CLUE、NPC知識状態、未確定分岐、関連正本をID参照で保持する。答えがまだOPENのままでもネットワークを作成・育成できるものとし、ネットワーク同士も必要に応じて接続可能とする。台詞や設定本文は重複保存せず、各正本を参照する。
-- D-20260915-06 | topic: NET-001 / 図書館認識 | target: pages/story/information-architecture.md | section: 試験運用 / NET-001 | op: merge | [確定] エルドの一般住民が図書館について示す基本反応は、`当然視型 / 委任型 / 無関心型` の3パターンとする。当然視型は「昔からあるため存在を当然視する」、委任型は「司書が管理している以上必要な施設だろうと考える」、無関心型は「自分に関係のない施設として用途を知らなくても問題視しない」とする。一般住民は原則として図書館の用途を知らないこと自体に強い疑問を持たず、秘密を意図的に隠している状態としては扱わない。
-- D-20260915-07 | topic: NET-001 / 図書館認識 | target: pages/story/information-architecture.md | section: 試験運用 / NET-001 | op: merge | [確定] エルドの司書は、図書館・本に関する知識状態を `partial`、開示姿勢を `guarded` とする。一般住民より多くを知っているが真相そのものは知らず、世界や図書館に何らかの不自然さを感じている。主人公へ全てを積極的に話す人物にはせず、自分でも整理できていないことや軽々しく話せないことから慎重に開示する立場とする。単純な説明役や、真相を知り尽くした案内役にはしない。
-- D-20260915-08 | topic: NET-001 / 図書館認識 | target: pages/story/information-architecture.md | section: 試験運用 / NET-001 | op: merge | [確定] 司書は「現在の本が本来の機能を果たしていない」ことを知っている。これは司書の `partial` の中核知識として扱う。一方で、なぜ本が本来の機能を失っているのか、その原因や世界全体の真相までは知らない。司書の知識境界は「異常の存在は知っているが、原因までは知らない」とする。
-- D-20260915-09 | topic: NET-001 / 図書館認識 | target: pages/story/information-architecture.md | section: 試験運用 / NET-001 | op: merge | [確定] 司書は、本の本来の機能について「本来は人が読むものだった」ことまでは知っている。一方で、本来何が書かれていたのか、本がなぜ読めなくなったのか、いつから現在の状態になったのか、過去にどのように読まれていたのかといった詳細までは知らない。序盤ではこの知識境界を維持し、司書を真相の説明役にしない。
+- なし
 
 ## 記録形式
 
