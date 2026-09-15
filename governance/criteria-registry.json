@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "registryRevision": 1,
+  "registryRevision": 2,
   "updatedAt": "2026-09-15",
   "purpose": "Machine-readable registry of cross-cutting decision criteria for UNTOLD. The rule text remains canonical in the referenced Markdown source; this registry gives each criterion a stable id, scope, and retroactive behavior.",
   "statusSemantics": {
@@ -36,6 +36,15 @@
       ],
       "notes": "Story, dialogue, character reaction, event presentation and narrative-facing content."
     },
+    "place-narrative-design": {
+      "includePrefixes": ["pages/world/"],
+      "includePaths": [
+        "pages/story/narrative-world-design.md",
+        "pages/systems/facilities.md",
+        "pages/systems/encounters.md"
+      ],
+      "notes": "Terrain, town, settlement, dungeon, ruin, facility and other place-design work. Apply these criteria to the narrative-facing parts of a place rather than mechanically to pure coordinate or collision data. If a dedicated dungeon directory is added later, extend this scope."
+    },
     "naming-bearing-content": {
       "includePrefixes": ["pages/world/", "pages/story/", "pages/cards/"],
       "includePaths": [
@@ -52,6 +61,7 @@
         "pages/story/foreshadowing-ledger.md",
         "pages/story/protagonist.md",
         "pages/story/gamemaster.md",
+        "pages/story/narrative-world-design.md",
         "pages/design-philosophy.md",
         "pages/development/eld-opening-sequence.md",
         "pages/world/eld-npcs.md"
@@ -139,6 +149,36 @@
       "scopes": ["narrative-design", "naming-bearing-content"],
       "retroactiveMode": "review",
       "origin": "existing-confirmed-rule",
+      "revision": 1
+    },
+    {
+      "id": "DESIGN-PLACE-STORY-001",
+      "title": "場所は現在・過去・真相接続・人物関係・認識段階を分けて設計する",
+      "status": "confirmed",
+      "source": {"path": "pages/story/narrative-world-design.md", "heading": "場所に重ねる5つの物語レイヤー【設計基準】"},
+      "scopes": ["place-narrative-design"],
+      "retroactiveMode": "future_only",
+      "origin": "user-requested-place-story-reference",
+      "revision": 1
+    },
+    {
+      "id": "DESIGN-RELATION-001",
+      "title": "人物関係を知識・行動・会話・依頼へ意味のある形で接続する",
+      "status": "confirmed",
+      "source": {"path": "pages/story/narrative-world-design.md", "heading": "人物関係の管理【確定】"},
+      "scopes": ["narrative-design", "place-narrative-design"],
+      "retroactiveMode": "future_only",
+      "origin": "user-requested-place-story-reference",
+      "revision": 1
+    },
+    {
+      "id": "DESIGN-PLACE-CLUE-001",
+      "title": "場所の伏線は直接証拠・二次的痕跡・再解釈を区別して配置する",
+      "status": "confirmed",
+      "source": {"path": "pages/story/narrative-world-design.md", "heading": "伏線を場所へ置くときの基準【確定】"},
+      "scopes": ["place-narrative-design", "foreshadowing-content"],
+      "retroactiveMode": "future_only",
+      "origin": "user-requested-place-story-reference",
       "revision": 1
     },
     {
