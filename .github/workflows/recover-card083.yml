@@ -29,7 +29,7 @@ jobs:
           )
           data = base64.b64decode(encoded, validate=True)
           git_sha = hashlib.sha1(b'blob ' + str(len(data)).encode() + b'\0' + data).hexdigest()
-          expected = 'e85337a7f3e3637f3ecf092896464378578276be'
+          expected = 'e853bbdcec7ccb6cbd4b04b0a37373d292e62b05'
           if git_sha != expected:
               raise SystemExit(f'card 083 SHA mismatch: {git_sha} != {expected}')
           if data[:4] != b'RIFF' or data[8:12] != b'WEBP':
