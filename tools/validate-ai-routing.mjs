@@ -12,6 +12,10 @@ const current = readJson('ai-current.json');
 const publicPages = readJson('pages.json');
 
 const isExternalTarget = (value) => value === 'fg79sw4nvw-dot/untold-game';
+const normalizeHeading = (line) => line
+  .replace(/^#+\s*/, '')
+  .trim()
+  .replace(/^\d+\.\s*/, '');
 
 for (const [route, targets] of Object.entries(index.routes ?? {})) {
   if (!Array.isArray(targets) || targets.length === 0) {
@@ -34,10 +38,10 @@ for (const [file, headings] of Object.entries(index.sectionHints ?? {})) {
   const actualHeadings = new Set(
     lines
       .filter((line) => line.startsWith('#'))
-      .map((line) => line.replace(/^#+\s*/, '').trim())
+      .map(normalizeHeading)
   );
   for (const heading of headings) {
-    if (!actualHeadings.has(heading)) {
+    if (!actualHeadings.has(normalizeHeading(heading))) {
       errors.push(`ai-index heading missing: ${file} -> ${heading}`);
     }
   }
