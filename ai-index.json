@@ -4,15 +4,17 @@
   "purpose": "Fast AI routing index for UNTOLD Wiki. Non-authoritative. Use it to jump to the canonical source without reading the whole wiki.",
   "readStrategy": [
     "Read AGENTS.md first.",
+    "For broad cross-cutting design involving truth, story, information architecture, protagonist, gamemaster, cities, terrain or roads, read ai-core-context.md as a non-authoritative overview before opening only the needed canonical sources.",
     "Use this index to choose the smallest relevant canonical source.",
     "Read ai-current.json only for current milestone / current-state navigation.",
     "For resume / what-to-decide-next requests, verify the candidate topic against its canonical route before calling it unresolved.",
     "Do not treat implementation state as specification status.",
     "Read ai-manifest.json only when routing is ambiguous, secondary references are needed, or legacy/authority rules matter.",
     "Read pages/chatgpt-guide.md for wiki governance, maintenance, audit, or routing-policy changes.",
-    "Never treat this file as a game-specification source of truth."
+    "Never treat this file or ai-core-context.md as a game-specification source of truth."
   ],
   "routes": {
+    "core-cross-cutting-context": ["ai-core-context.md", "decision-inbox.md", "pages/design-philosophy.md"],
     "wiki-governance": ["pages/governance/spec-maintenance.md", "governance/criteria-registry.json", "governance/review-ledger.json"],
     "overview-design": ["pages/home.md", "pages/design-philosophy.md"],
     "homage-design-research": ["pages/design-philosophy.md", "pages/story/homage-ledger.md"],
@@ -53,6 +55,23 @@
     "fallback-implementation-details": ["pages/development/implementation.md"]
   },
   "sectionHints": {
+    "ai-core-context.md": [
+      "UNTOLDの核",
+      "世界の真相・約180年前の過去",
+      "記録文化封印と現代社会",
+      "ストーリーの背骨",
+      "情報構築",
+      "伏線・非公開情報",
+      "主人公",
+      "ゲームマスター",
+      "BOOK・RECORD・QUESTION・カード",
+      "世界地理・地形",
+      "都市",
+      "水系・街道・交通",
+      "設計上の重要な禁止・ガード",
+      "現在の開発優先順位",
+      "話題別の正本ショートカット"
+    ],
     "pages/story/homage-ledger.md": [
       "運用ルール【確定】",
       "記録形式【確定】",
