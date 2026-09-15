@@ -17,6 +17,7 @@
     "overview-design": ["pages/home.md", "pages/design-philosophy.md"],
     "foreshadowing-hidden-truths": ["pages/story/foreshadowing-ledger.md", "pages/design-philosophy.md"],
     "information-architecture": ["pages/story/information-architecture.md", "pages/story/foreshadowing-ledger.md", "pages/design-philosophy.md", "pages/systems/recording.md"],
+    "narrative-world-place-design": ["pages/story/narrative-world-design.md", "pages/story/foreshadowing-ledger.md", "pages/story/information-architecture.md", "pages/world/world.md"],
     "naming": ["pages/naming-guidelines.md"],
     "world-islands-orba": ["pages/world/world.md", "pages/world/world-map.md"],
     "terrain-passability": ["pages/world/terrain-allocation-final.md"],
@@ -51,6 +52,15 @@
     "fallback-implementation-details": ["pages/development/implementation.md"]
   },
   "sectionHints": {
+    "pages/story/narrative-world-design.md": [
+      "物語の背骨【確定事項の設計用要約】",
+      "場所に重ねる5つの物語レイヤー【設計基準】",
+      "現時点で確定している地域別の物語機能",
+      "人物関係の管理【確定】",
+      "伏線を場所へ置くときの基準【確定】",
+      "地域設計用テンプレート【確定】",
+      "地域設計の手順【確定】"
+    ],
     "pages/story/information-architecture.md": [
       "このページの役割【確定】",
       "他の正本との役割分担【確定】",
