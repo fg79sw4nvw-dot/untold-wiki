@@ -15,6 +15,7 @@
   "routes": {
     "wiki-governance": ["pages/governance/spec-maintenance.md", "governance/criteria-registry.json", "governance/review-ledger.json"],
     "overview-design": ["pages/home.md", "pages/design-philosophy.md"],
+    "homage-design-research": ["pages/design-philosophy.md", "pages/story/homage-ledger.md"],
     "foreshadowing-hidden-truths": ["pages/story/foreshadowing-ledger.md", "pages/design-philosophy.md"],
     "information-architecture": ["pages/story/information-architecture.md", "pages/story/foreshadowing-ledger.md", "pages/design-philosophy.md", "pages/systems/recording.md"],
     "narrative-world-place-design": ["pages/story/narrative-world-design.md", "pages/story/foreshadowing-ledger.md", "pages/story/information-architecture.md", "pages/world/world.md"],
@@ -24,7 +25,7 @@
     "regions": ["pages/world/region-mask.md"],
     "rivers-lakes-roads-bridges": ["pages/world/world-rivers-lakes-crossings.md", "assets/elden-terrain-mask-final.svg"],
     "towns-names-coordinates": ["pages/world/towns.md", "pages/world/terrain-allocation-final.md"],
-    "eld": ["pages/world/eld.md", "pages/world/eld-layout.md", "pages/world/eld-npcs.md", "pages/world/eld-npc-movement.md", "pages/world/protagonist-home.md"],
+    "eld": ["pages/world/eld.md", "pages/world/eld-layout.md", "pages/world/eld-npcs.md", "pages/world/eld-npc-movement.md", "pages/world/protagonist-home.md", "pages/story/homage-ledger.md"],
     "map-transitions": ["pages/world/map-transitions.md"],
     "protagonist": ["pages/story/protagonist.md"],
     "gamemaster": ["pages/story/gamemaster.md"],
@@ -43,7 +44,7 @@
     "gameplay-ui": ["pages/systems/gameplay-ui.md"],
     "map-display": ["pages/systems/map-display-basis.md"],
     "tutorial-guidance": ["pages/systems/tutorial-guidance.md"],
-    "opening-early-eld": ["pages/development/eld-opening-sequence.md", "pages/development/day2-home-tutorial.md", "pages/cards/055-book-eating-rat.md", "pages/cards/055-book-eating-rat-clue-grouping.md", "pages/world/protagonist-home.md"],
+    "opening-early-eld": ["pages/development/eld-opening-sequence.md", "pages/development/day2-home-tutorial.md", "pages/cards/055-book-eating-rat.md", "pages/cards/055-book-eating-rat-clue-grouping.md", "pages/world/protagonist-home.md", "pages/story/homage-ledger.md"],
     "required-introduction-day1-day2": ["pages/development/eld-opening-sequence.md", "pages/cards/055-book-eating-rat.md", "pages/cards/055-book-eating-rat-clue-grouping.md", "pages/development/day2-home-tutorial.md", "pages/world/protagonist-home.md"],
     "card-055-clue-grouping": ["pages/cards/055-book-eating-rat-clue-grouping.md", "pages/systems/recording.md", "pages/cards/055-book-eating-rat.md"],
     "current-milestone-next-step": ["ai-current.json", "pages/development/free-exploration-core-milestone.md", "pages/open-items.md"],
@@ -52,6 +53,15 @@
     "fallback-implementation-details": ["pages/development/implementation.md"]
   },
   "sectionHints": {
+    "pages/story/homage-ledger.md": [
+      "運用ルール【確定】",
+      "記録形式【確定】",
+      "HOM-001：やたらと親切な男【確定】",
+      "HOM-002：問いを楽しむ老婆【確定】",
+      "HOM-003：泥跳ね猪の肉と豪快な焼き方【確定】",
+      "HOM-004：正体の分からない旅人料理【確定】",
+      "序盤で意図的にオマージュを置かない核【確定】"
+    ],
     "pages/story/narrative-world-design.md": [
       "物語の背骨【確定事項の設計用要約】",
       "場所に重ねる5つの物語レイヤー【設計基準】",
