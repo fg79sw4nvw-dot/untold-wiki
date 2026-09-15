@@ -6,7 +6,7 @@
 
 ## 状態
 
-- 未統合件数: **4**
+- 未統合件数: **5**
 
 ## 未統合の確定事項
 
@@ -14,6 +14,7 @@
 - D-20260915-02 | topic: 情報アーキテクチャ | target: pages/story/information-architecture.md | section: 接続関係 | op: merge | [確定] 情報ノード間の基本接続は `raises / supports / contradicts / resolves / recontextualizes` の5種類とする。`supports` には `strength: weak / normal / strong` の強度属性を持たせ、`suggests` と `confirms` は独立接続にしない。必須前提は `required: true` の属性で表し、`requires` は独立接続にしない。`misleads` は通常の情報接続ではなく制作側メタ情報として扱い、CLUE等の制作管理と同様に運用する。
 - D-20260915-03 | topic: 情報アーキテクチャ | target: pages/story/information-architecture.md | section: NPC知識モデル | op: merge | [確定] NPCの情報状態は「知識状態」と「開示姿勢」を分離して管理する。知識状態は `knows / partial / suspects / mistaken / unknown` の5種類とし、開示姿勢は `open / guarded / concealed` の3種類とする。`知っているが隠している` は単独の知識状態にせず、例として `knows + concealed` の組み合わせで表現する。これにより、同じ知識状態でも人物ごとに話し方・開示量を変えられる構造とする。
 - D-20260915-04 | topic: 情報アーキテクチャ | target: pages/story/information-architecture.md | section: プレイヤー認識段階 | op: merge | [確定] プレイヤー認識段階は制作側の内部設計指標として5段階で管理する。段階は `未認識 / 違和感 / 仮説形成 / 有力化 / 確定` とする。ゲーム画面へ数値や段階名をそのまま表示するものではなく、各TRUTH・QUESTION等について「その時点でプレイヤーにどこまで気づかせたいか」を設計・確認するために使用する。
+- D-20260915-05 | topic: 情報アーキテクチャ | target: pages/story/information-architecture.md | section: 個別ネットワークの記録形式 | op: merge | [確定] 個別情報ネットワークは、原則として「1つの主要QUESTION」を中心単位として管理する。各ネットワークには固有の `NET-xxx` IDを付け、中心QUESTION、到達先となるTRUTH/HIDDEN/OPEN、現在のプレイヤー認識目標、関連INFO・OBSERVATION・INFERENCE、ノード間接続、関連CLUE、NPC知識状態、未確定分岐、関連正本をID参照で保持する。答えがまだOPENのままでもネットワークを作成・育成できるものとし、ネットワーク同士も必要に応じて接続可能とする。台詞や設定本文は重複保存せず、各正本を参照する。
 
 ## 記録形式
 
