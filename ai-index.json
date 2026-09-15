@@ -17,6 +17,7 @@
     "core-cross-cutting-context": ["ai-core-context.md", "decision-inbox.md", "pages/design-philosophy.md"],
     "wiki-governance": ["pages/governance/spec-maintenance.md", "governance/criteria-registry.json", "governance/review-ledger.json"],
     "overview-design": ["pages/home.md", "pages/design-philosophy.md"],
+    "promotion-daily-insights": ["pages/promotion/promotion-daily-log.md"],
     "artwork-visual-identity": ["pages/art-direction.md", "pages/design-philosophy.md"],
     "homage-design-research": ["pages/design-philosophy.md", "pages/story/homage-ledger.md"],
     "foreshadowing-hidden-truths": ["pages/story/foreshadowing-ledger.md", "pages/design-philosophy.md"],
@@ -72,6 +73,12 @@
       "設計上の重要な禁止・ガード",
       "現在の開発優先順位",
       "話題別の正本ショートカット"
+    ],
+    "pages/promotion/promotion-daily-log.md": [
+      "目的",
+      "記録ステータス",
+      "日次エントリーの書式",
+      "運用ルール"
     ],
     "pages/art-direction.md": [
       "現在の基準【確定】",
