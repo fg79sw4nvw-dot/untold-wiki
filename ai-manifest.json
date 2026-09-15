@@ -1,6 +1,6 @@
 {
   "schemaVersion": 3,
-  "updatedAt": "2026-09-15",
+  "updatedAt": "2026-09-16",
   "repository": "fg79sw4nvw-dot/untold-wiki",
   "branch": "main",
   "purpose": "Detailed AI routing metadata for UNTOLD Wiki. Use ai-index.json first for normal requests. This file does not replace topical specification pages.",
@@ -63,6 +63,11 @@
     {
       "topic": "project overview and design principles",
       "primary": ["pages/home.md", "pages/design-philosophy.md"]
+    },
+    {
+      "topic": "promotion, marketing, social media operation, daily promotion insights, posting experiments and reactions",
+      "primary": ["pages/promotion/promotion-daily-log.md"],
+      "rule": "Treat observations, hypotheses and experiments as logs, not confirmed promotion policy, unless the entry is explicitly marked as a confirmed policy."
     },
     {
       "topic": "foreshadowing, hidden confirmed truths, intentionally unresolved story truths, meaningful dialogue subtext",
