@@ -32,6 +32,7 @@
     {"slug":"protagonist","category":"ストーリー","path":"pages/story/protagonist.md"},
     {"slug":"protagonist-dialogue-log","category":"ストーリー","path":"pages/story/protagonist-dialogue-log.md"},
     {"slug":"foreshadowing-ledger","category":"ストーリー","path":"pages/story/foreshadowing-ledger.md"},
+    {"slug":"homage-ledger","category":"ストーリー","path":"pages/story/homage-ledger.md"},
     {"slug":"information-architecture","category":"ストーリー","path":"pages/story/information-architecture.md"},
     {"slug":"narrative-world-design","category":"ストーリー","path":"pages/story/narrative-world-design.md"},
     {"slug":"book","category":"システム","path":"pages/systems/book.md"},
