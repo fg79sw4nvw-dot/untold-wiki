@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "registryRevision": 3,
+  "registryRevision": 4,
   "updatedAt": "2026-09-15",
   "purpose": "Machine-readable registry of cross-cutting decision criteria for UNTOLD. The rule text remains canonical in the referenced Markdown source; this registry gives each criterion a stable id, scope, and retroactive behavior.",
   "statusSemantics": {
@@ -153,13 +153,13 @@
     },
     {
       "id": "DESIGN-HOMAGE-001",
-      "title": "エルド周辺と序盤ではHUNTER×HUNTERオマージュを導入フックとして高密度に配置する",
+      "title": "序盤のHUNTER×HUNTERオマージュはWebで認知度と使われ方を調査し元ネタ明記付きで提案する",
       "status": "confirmed",
       "source": {"path": "pages/design-philosophy.md", "heading": "序盤のHUNTER×HUNTERオマージュ【確定】"},
       "scopes": ["narrative-design", "place-narrative-design", "naming-bearing-content"],
       "retroactiveMode": "future_only",
       "origin": "user-requested-early-homage-hook",
-      "revision": 1
+      "revision": 2
     },
     {
       "id": "DESIGN-PLACE-STORY-001",
