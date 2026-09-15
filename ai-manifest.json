@@ -69,6 +69,12 @@
       "rule": "Do not convert OPEN items into confirmed truths by inference. Intentional clues should be linked to a tracked target, and NONCLUE items must not be retrofitted into foreshadowing without an explicit design change."
     },
     {
+      "topic": "information architecture, truth-question-information-observation-inference relationships, clue networks, NPC knowledge state, player inference stages",
+      "primary": ["pages/story/information-architecture.md"],
+      "secondary": ["pages/story/foreshadowing-ledger.md", "pages/design-philosophy.md", "pages/systems/recording.md"],
+      "rule": "Use this page for the structure connecting truths, questions, information, observations, inferences and clues. Keep actual hidden truths and adopted clues canonical in foreshadowing-ledger, and keep player recording mechanics canonical in recording.md."
+    },
+    {
       "topic": "new names, naming review, naming consistency",
       "primary": ["pages/naming-guidelines.md"],
       "secondary": ["governance/criteria-registry.json"]
