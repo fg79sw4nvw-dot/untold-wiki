@@ -11,6 +11,7 @@
     "source": "pages/development/preflight-risk-milestone.md",
     "status": "active in parallel with D0",
     "currentStep": "P0-3：アセット制作パイプライン実証",
+    "currentStepSource": "pages/development/asset-pipeline.md",
     "completedSteps": ["P0-1", "P0-2"]
   },
   "milestoneTracks": {
@@ -35,6 +36,7 @@
     "preflightMilestone": "pages/development/preflight-risk-milestone.md",
     "contentDataModel": "pages/development/content-data-model.md",
     "saveDataModel": "pages/development/save-data-model.md",
+    "assetPipeline": "pages/development/asset-pipeline.md",
     "eldTown": "pages/world/eld.md",
     "eldLayout": "pages/world/eld-layout.md",
     "eldNpcs": "pages/world/eld-npcs.md",
@@ -53,7 +55,7 @@
     "Treat implementation progress separately from specification status.",
     "For current-milestone or next-step decisions, read currentMilestone.source and parallelMilestone.source before identifying the active design boundary.",
     "P0 is an independent preflight milestone and may advance out of D/A order when doing so reduces high-cost rework.",
-    "For P0 continuation, read the currentStep source or the completed P0 child pages before reopening an already completed preflight decision.",
+    "For P0 continuation, read parallelMilestone.currentStepSource and the completed P0 child pages before reopening an already completed preflight decision.",
     "For application progress, verify implementationProgress and the current untold-game main branch before assigning or completing an A milestone.",
     "For next-step decisions, check decisionInbox, then verify the candidate topic in its canonical source through ai-index.json.",
     "Follow linked continuation sources to the latest confirmed handoff before proposing a new design decision."
