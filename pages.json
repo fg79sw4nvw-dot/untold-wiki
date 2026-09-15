@@ -32,6 +32,7 @@
     {"slug":"protagonist","category":"ストーリー","path":"pages/story/protagonist.md"},
     {"slug":"protagonist-dialogue-log","category":"ストーリー","path":"pages/story/protagonist-dialogue-log.md"},
     {"slug":"foreshadowing-ledger","category":"ストーリー","path":"pages/story/foreshadowing-ledger.md"},
+    {"slug":"information-architecture","category":"ストーリー","path":"pages/story/information-architecture.md"},
     {"slug":"book","category":"システム","path":"pages/systems/book.md"},
     {"slug":"card-system","category":"システム","path":"pages/systems/cards.md"},
     {"slug":"cardization-rules","category":"システム","path":"pages/systems/cardization-rules.md"},
