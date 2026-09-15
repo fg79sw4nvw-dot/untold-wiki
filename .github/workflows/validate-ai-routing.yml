@@ -7,8 +7,10 @@ on:
       - 'ai-index.json'
       - 'ai-current.json'
       - 'ai-manifest.json'
+      - 'pages.json'
       - 'pages/**'
       - 'governance/**'
+      - 'vercel.json'
       - 'tools/validate-ai-routing.mjs'
       - '.github/workflows/validate-ai-routing.yml'
   push:
@@ -18,8 +20,10 @@ on:
       - 'ai-index.json'
       - 'ai-current.json'
       - 'ai-manifest.json'
+      - 'pages.json'
       - 'pages/**'
       - 'governance/**'
+      - 'vercel.json'
       - 'tools/validate-ai-routing.mjs'
       - '.github/workflows/validate-ai-routing.yml'
 

@@ -9,6 +9,7 @@ const errors = [];
 const index = readJson('ai-index.json');
 const manifest = readJson('ai-manifest.json');
 const current = readJson('ai-current.json');
+const publicPages = readJson('pages.json');
 
 const isExternalTarget = (value) => value === 'fg79sw4nvw-dot/untold-game';
 
@@ -60,6 +61,20 @@ if (current.currentMilestone?.source && !exists(current.currentMilestone.source)
   errors.push(`ai-current milestone source missing: ${current.currentMilestone.source}`);
 }
 
+const pageSlugs = new Set();
+for (const page of publicPages.pages ?? []) {
+  if (!page?.slug || !page?.path) {
+    errors.push('pages.json contains a page without slug/path');
+    continue;
+  }
+  if (pageSlugs.has(page.slug)) errors.push(`pages.json duplicate slug: ${page.slug}`);
+  pageSlugs.add(page.slug);
+  if (!exists(page.path)) errors.push(`pages.json missing page target: ${page.slug} -> ${page.path}`);
+  for (const image of page.images ?? []) {
+    if (!exists(image)) errors.push(`pages.json missing image target: ${page.slug} -> ${image}`);
+  }
+}
+
 // Resume safety checks: current development spans several canonical pages.
 // These assertions prevent later router cleanup from accidentally reducing
 // "resume / what next" navigation back to an incomplete early-flow view.
@@ -99,7 +114,21 @@ if (!Array.isArray(index.routes?.['current-milestone-next-step'])) {
   errors.push('ai-index missing current-milestone-next-step route');
 }
 
-for (const required of ['AGENTS.md', 'ai-index.json', 'ai-current.json', 'ai-manifest.json', 'pages/chatgpt-guide.md']) {
+const productionWorkflow = 'pages/development/production-workflow.md';
+if (current.sources?.productionWorkflow !== productionWorkflow) {
+  errors.push(`ai-current productionWorkflow mismatch: expected ${productionWorkflow}`);
+}
+const productionTargets = new Set(index.routes?.['production-delivery-workflow'] ?? []);
+for (const target of [productionWorkflow, 'pages/development/implementation-status.md', 'fg79sw4nvw-dot/untold-game']) {
+  if (!productionTargets.has(target)) {
+    errors.push(`ai-index production-delivery-workflow missing target: ${target}`);
+  }
+}
+if (!pageSlugs.has('production-workflow')) {
+  errors.push('pages.json missing public production-workflow page');
+}
+
+for (const required of ['AGENTS.md', 'ai-index.json', 'ai-current.json', 'ai-manifest.json', 'pages/chatgpt-guide.md', productionWorkflow]) {
   if (!exists(required)) errors.push(`required AI routing file missing: ${required}`);
 }
 

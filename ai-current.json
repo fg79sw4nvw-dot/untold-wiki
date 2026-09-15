@@ -30,6 +30,8 @@
     }
   },
   "sources": {
+    "productionWorkflow": "pages/development/production-workflow.md",
+    "mapPreviewWorkflow": "pages/development/map-preview-workflow.md",
     "implementationProgress": "pages/development/implementation-status.md",
     "deviceTestStrategy": "pages/development/device-test-strategy.md",
     "deviceTestRunbook": "pages/development/p0-3-device-test-runbook.md",
@@ -59,6 +61,8 @@
     "P0 is an independent preflight milestone and may advance out of D/A order when doing so reduces high-cost rework.",
     "For P0 continuation, read parallelMilestone.currentStepSource and the completed P0 child pages before reopening an already completed preflight decision.",
     "For application progress, verify implementationProgress and the current untold-game main branch before assigning or completing an A milestone.",
+    "For specification-to-implementation, GitHub/Vercel delivery, interruption recovery, or device-test readiness, read productionWorkflow and verify both repository HEADs plus the exact Vercel deployment commit SHA instead of relying on a progress snapshot.",
+    "For map creation or large map revisions, read mapPreviewWorkflow and then close the work unit through productionWorkflow unless the user explicitly stops before implementation or delivery.",
     "For Safari/PWA or iPhone device-test timing, read deviceTestStrategy before deciding whether a milestone requires real-device validation.",
     "For the current P0-3 Safari/PWA real-device execution, read deviceTestRunbook after deviceTestStrategy.",
     "For next-step decisions, check decisionInbox, then verify the candidate topic in its canonical source through ai-index.json.",

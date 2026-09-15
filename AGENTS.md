@@ -18,6 +18,7 @@ Wiki全体、`README.md`、`ai-manifest.json`、`pages/chatgpt-guide.md` を毎�
 - 進行が複数の正本へまたがる場合は、現在読んでいる正本から示された後続正本・関連正本をたどり、**最後に確定済みの進行地点まで確認してから**次の設計候補を出す。
 - ルーティングが曖昧、複数ページの優先順位が必要、旧資料の扱いを確認したい場合だけ `ai-manifest.json` を読む。
 - Wiki保守、監査、判断基準、参照ルール自体を変更する場合は `pages/chatgpt-guide.md` と `pages/governance/spec-maintenance.md` を読む。
+- **仕様確定からゲーム本体実装、GitHub、Vercel、実機確認までを一続きで進める場合、または中断後に作業地点を復元する場合は `pages/development/production-workflow.md` を読む。** MAP制作では併せて `pages/development/map-preview-workflow.md` を読む。
 - **ゲーム本体の実装で、セーブ／永続化、入力、描画、アセット、PWA、ブラウザAPI、OS固有機能、将来のストア配信に関わる変更を行う場合は `governance/platform-portability.md` も確認する。**
 
 ## 絶対ルール
@@ -35,8 +36,10 @@ Wiki全体、`README.md`、`ai-manifest.json`、`pages/chatgpt-guide.md` を毎�
 - `ai-core-context.md` も**複数分野を横断する高速参照用の非正本サマリー**であり、同一会話・Decision Inbox・個別正本より優先しない。
 - `wiki.json`、旧マップ資料、履歴ページを現行仕様の根拠にしない。
 - 実装状況はWikiだけで断定せず、必要に応じて `fg79sw4nvw-dot/untold-game` の現行 `main` を確認する。
+- **Vercelは配信先であり正本ではない。** 「公開反映済み」「実機確認可能」と判断する前に、対象Vercel Production DeploymentのGitHub commit SHAが確認対象の `main` SHAと一致し、成功していることを確認する。古いREADYデプロイを最新とみなさない。
+- 接続切断・アプリ再起動・別チャットへの引き継ぎ時は、会話上の進捗ではなく両リポジトリのHEAD・直前の関連コミット・CI・VercelのSHAを確認し、最初の未完了工程から再開する。
 - 新規公開ページ追加・削除時は `pages.json` も更新する。
 - 仕様を確定・変更した場合の関連 `pages/open-items.md`、索引、名称参照への影響確認は、**通常の軽量統合では毎回行わず、構造変更・明白な矛盾・定期監査・ユーザー指示時に行う**。
 - **ゲームロジックへブラウザ／OS固有APIを直接持ち込まない。セーブ状態と保存媒体、ゲーム状態と描画方式、ゲーム条件と入力デバイスを分離し、将来PWA・iOS・Android・PC等で同じゲーム本体を再利用できる境界を維持する。詳細は `governance/platform-portability.md` を正とする。**
 
-詳細ルーティングは `ai-manifest.json`、Wiki保守ルールは `pages/chatgpt-guide.md` と `pages/governance/spec-maintenance.md` を正とします。
+詳細ルーティングは `ai-manifest.json`、Wiki保守ルールは `pages/chatgpt-guide.md` と `pages/governance/spec-maintenance.md`、制作から配信までの工程は `pages/development/production-workflow.md` を正とします。
