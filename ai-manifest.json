@@ -16,6 +16,7 @@
   },
   "authorityOrder": [
     "newly confirmed decisions in the current conversation that are not yet committed",
+    "unintegrated confirmed decisions in decision-inbox.md",
     "topic-specific current canonical page",
     "cross-cutting design or naming rules",
     "supporting summaries and indexes",
@@ -34,6 +35,7 @@
   "sourceRoles": {
     "fastIndex": "ai-index.json",
     "currentStateRouter": "ai-current.json",
+    "decisionInbox": "decision-inbox.md",
     "router": [
       "AGENTS.md",
       "ai-index.json",
@@ -165,6 +167,16 @@
       "secondary": ["pages/systems/book.md"]
     },
     {
+      "topic": "recipes, cooking, crafting",
+      "primary": ["pages/systems/recipes.md"],
+      "secondary": ["pages/systems/facilities.md", "pages/systems/economy.md", "pages/systems/free-pocket.md"]
+    },
+    {
+      "topic": "facilities, inn, information broker, dining, workshop",
+      "primary": ["pages/systems/facilities.md"],
+      "secondary": ["pages/systems/economy.md", "pages/systems/recipes.md"]
+    },
+    {
       "topic": "time, seasons, weather",
       "primary": ["pages/systems/time-weather.md"]
     },
@@ -175,10 +187,10 @@
     {
       "topic": "economy, shops, currency",
       "primary": ["pages/systems/economy.md"],
-      "secondary": ["pages/development/implementation.md"]
+      "secondary": ["pages/systems/facilities.md"]
     },
     {
-      "topic": "crafting, recipes, implementation-wide gameplay details without a dedicated page",
+      "topic": "implementation-wide gameplay details without a dedicated page",
       "primary": ["pages/development/implementation.md"],
       "rule": "If a dedicated topical page also covers the same fact, the dedicated topical page wins."
     },
@@ -222,7 +234,7 @@
       "context": "ai-current.json",
       "primary": ["pages/development/free-exploration-core-milestone.md"],
       "secondary": ["pages/open-items.md"],
-      "rule": "Do not infer an unresolved design decision from implementation-status or missing game code. Use open-items as a candidate list, then route the candidate topic through ai-index.json and verify its canonical page. For the current early-game flow, also follow the sources listed in ai-current.json to the last confirmed handoff."
+      "rule": "Start from the current milestone source and the current-state sources listed in ai-current.json. Do not infer an unresolved design decision from implementation-status or missing game code. Route each candidate topic through ai-index.json and verify its canonical page before calling it unresolved."
     },
     {
       "topic": "current implementation state",
@@ -279,6 +291,6 @@
     "legacyMaterial": "Keep it clearly marked as legacy/history and never silently promote it to current specification.",
     "batching": "As a normal conversation workflow, batch GitHub specification updates after roughly 10 confirmed items, or earlier at a topic boundary, conversation end, or explicit update request.",
     "implementationState": "When the user asks what is actually implemented now, verify fg79sw4nvw-dot/untold-game when needed. Never convert implementation gaps into unresolved design decisions without checking the topical canonical source.",
-    "resumeNextStep": "For development resume or next-decision requests, use ai-current.json for navigation, route each candidate through ai-index.json, follow linked continuation pages to the last confirmed handoff, then propose only the first genuinely unresolved boundary."
+    "resumeNextStep": "For development resume or next-decision requests, use ai-current.json for navigation, check decision-inbox.md for unintegrated confirmed changes, route each candidate through ai-index.json, follow linked continuation pages to the last confirmed handoff, then propose only the first genuinely unresolved boundary."
   }
 }
