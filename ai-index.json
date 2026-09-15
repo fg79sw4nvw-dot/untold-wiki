@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-15",
+  "updatedAt": "2026-09-16",
   "purpose": "Fast AI routing index for UNTOLD Wiki. Non-authoritative. Use it to jump to the canonical source without reading the whole wiki.",
   "readStrategy": [
     "Read AGENTS.md first.",
@@ -17,6 +17,7 @@
     "core-cross-cutting-context": ["ai-core-context.md", "decision-inbox.md", "pages/design-philosophy.md"],
     "wiki-governance": ["pages/governance/spec-maintenance.md", "governance/criteria-registry.json", "governance/review-ledger.json"],
     "overview-design": ["pages/home.md", "pages/design-philosophy.md"],
+    "artwork-visual-identity": ["pages/art-direction.md", "pages/design-philosophy.md"],
     "homage-design-research": ["pages/design-philosophy.md", "pages/story/homage-ledger.md"],
     "foreshadowing-hidden-truths": ["pages/story/foreshadowing-ledger.md", "pages/design-philosophy.md"],
     "information-architecture": ["pages/story/information-architecture.md", "pages/story/foreshadowing-ledger.md", "pages/design-philosophy.md", "pages/systems/recording.md"],
@@ -71,6 +72,12 @@
       "設計上の重要な禁止・ガード",
       "現在の開発優先順位",
       "話題別の正本ショートカット"
+    ],
+    "pages/art-direction.md": [
+      "現在の基準【確定】",
+      "タイトル書体の予備候補【保持】",
+      "運用方針【確定】",
+      "現時点で未確定のもの"
     ],
     "pages/story/homage-ledger.md": [
       "運用ルール【確定】",
