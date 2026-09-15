@@ -1,0 +1,47 @@
+name: Recover card 083 asset
+
+on:
+  push:
+    branches:
+      - recovery/card-083
+    paths:
+      - .github/workflows/recover-card083.yml
+
+permissions:
+  contents: write
+
+jobs:
+  recover:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Rebuild and verify WebP
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import base64
+          import hashlib
+
+          encoded = ''.join(
+              Path(f'.recovery/card083.part{i}').read_text().strip()
+              for i in range(1, 5)
+          )
+          data = base64.b64decode(encoded, validate=True)
+          git_sha = hashlib.sha1(b'blob ' + str(len(data)).encode() + b'\0' + data).hexdigest()
+          expected = 'e85337a7f3e3637f3ecf092896464378578276be'
+          if git_sha != expected:
+              raise SystemExit(f'card 083 SHA mismatch: {git_sha} != {expected}')
+          if data[:4] != b'RIFF' or data[8:12] != b'WEBP':
+              raise SystemExit('card 083 is not a valid RIFF/WEBP payload')
+          target = Path('assets/card-083-question-old-woman.webp')
+          target.write_bytes(data)
+          print(f'restored {target}: {len(data)} bytes, git blob {git_sha}')
+          PY
+      - name: Commit recovered asset
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add assets/card-083-question-old-woman.webp
+          git commit -m "Recover valid card 083 artwork"
+          git push
