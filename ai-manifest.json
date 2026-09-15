@@ -77,6 +77,12 @@
       "rule": "Use this page for the structure connecting truths, questions, information, observations, inferences and clues. Keep actual hidden truths and adopted clues canonical in foreshadowing-ledger, and keep player recording mechanics canonical in recording.md."
     },
     {
+      "topic": "narrative design for terrain, towns, settlements, dungeons, ruins, facilities, regional NPC groups and place-based story planning",
+      "primary": ["pages/story/narrative-world-design.md"],
+      "secondary": ["pages/story/foreshadowing-ledger.md", "pages/story/information-architecture.md", "pages/world/world.md", "pages/story/protagonist.md", "pages/story/gamemaster.md", "pages/design-philosophy.md"],
+      "rule": "Use narrative-world-design when deciding what story role a place carries, how relationships and knowledge differences operate there, and which hidden truths or clues it may support. Do not invent unresolved regional history or relationships merely to fill the template."
+    },
+    {
       "topic": "new names, naming review, naming consistency",
       "primary": ["pages/naming-guidelines.md"],
       "secondary": ["governance/criteria-registry.json"]
