@@ -9,6 +9,12 @@
   "sources": {
     "implementationProgress": "pages/development/implementation-status.md",
     "unresolvedDecisions": "pages/open-items.md",
+    "eldTown": "pages/world/eld.md",
+    "eldLayout": "pages/world/eld-layout.md",
+    "eldNpcs": "pages/world/eld-npcs.md",
+    "eldNpcMovement": "pages/world/eld-npc-movement.md",
+    "facilities": "pages/systems/facilities.md",
+    "gameplayUi": "pages/systems/gameplay-ui.md",
     "openingSequence": "pages/development/eld-opening-sequence.md",
     "day2HomeTutorial": "pages/development/day2-home-tutorial.md",
     "firstQuest": "pages/cards/055-book-eating-rat.md",
@@ -19,6 +25,7 @@
     "Detailed specifications remain in their canonical Markdown pages.",
     "Do not infer missing specifications.",
     "Treat implementation progress separately from specification status.",
+    "For current-milestone or next-step decisions, read currentMilestone.source first, then verify the relevant Eld town source before following early-game handoff sources.",
     "For next-step decisions, verify the candidate topic in its canonical source through ai-index.json.",
     "Follow linked continuation sources to the latest confirmed handoff before proposing a new design decision."
   ]
