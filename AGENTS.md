@@ -18,6 +18,7 @@ Wiki全体、`README.md`、`ai-manifest.json`、`pages/chatgpt-guide.md` を毎�
 - 進行が複数の正本へまたがる場合は、現在読んでいる正本から示された後続正本・関連正本をたどり、**最後に確定済みの進行地点まで確認してから**次の設計候補を出す。
 - ルーティングが曖昧、複数ページの優先順位が必要、旧資料の扱いを確認したい場合だけ `ai-manifest.json` を読む。
 - Wiki保守、監査、判断基準、参照ルール自体を変更する場合は `pages/chatgpt-guide.md` と `pages/governance/spec-maintenance.md` を読む。
+- **ゲーム本体の実装で、セーブ／永続化、入力、描画、アセット、PWA、ブラウザAPI、OS固有機能、将来のストア配信に関わる変更を行う場合は `governance/platform-portability.md` も確認する。**
 
 ## 絶対ルール
 
@@ -36,5 +37,6 @@ Wiki全体、`README.md`、`ai-manifest.json`、`pages/chatgpt-guide.md` を毎�
 - 実装状況はWikiだけで断定せず、必要に応じて `fg79sw4nvw-dot/untold-game` の現行 `main` を確認する。
 - 新規公開ページ追加・削除時は `pages.json` も更新する。
 - 仕様を確定・変更した場合の関連 `pages/open-items.md`、索引、名称参照への影響確認は、**通常の軽量統合では毎回行わず、構造変更・明白な矛盾・定期監査・ユーザー指示時に行う**。
+- **ゲームロジックへブラウザ／OS固有APIを直接持ち込まない。セーブ状態と保存媒体、ゲーム状態と描画方式、ゲーム条件と入力デバイスを分離し、将来PWA・iOS・Android・PC等で同じゲーム本体を再利用できる境界を維持する。詳細は `governance/platform-portability.md` を正とする。**
 
 詳細ルーティングは `ai-manifest.json`、Wiki保守ルールは `pages/chatgpt-guide.md` と `pages/governance/spec-maintenance.md` を正とします。
