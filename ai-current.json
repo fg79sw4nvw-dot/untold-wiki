@@ -6,6 +6,11 @@
     "label": "D0：既存設計の統合・棚卸し",
     "source": "pages/development/free-exploration-core-milestone.md"
   },
+  "parallelMilestone": {
+    "label": "P0：先行リスク解消・成立性検証",
+    "source": "pages/development/preflight-risk-milestone.md",
+    "status": "active in parallel with D0"
+  },
   "milestoneTracks": {
     "design": {
       "current": "D0",
@@ -14,12 +19,18 @@
     "application": {
       "completion": "A6：リリース判定",
       "statusSource": "pages/development/implementation-status.md"
+    },
+    "preflight": {
+      "current": "P0",
+      "completion": "P0：先行リスク解消・成立性検証",
+      "source": "pages/development/preflight-risk-milestone.md"
     }
   },
   "sources": {
     "implementationProgress": "pages/development/implementation-status.md",
     "unresolvedDecisions": "pages/open-items.md",
     "decisionInbox": "decision-inbox.md",
+    "preflightMilestone": "pages/development/preflight-risk-milestone.md",
     "eldTown": "pages/world/eld.md",
     "eldLayout": "pages/world/eld-layout.md",
     "eldNpcs": "pages/world/eld-npcs.md",
@@ -36,7 +47,8 @@
     "Detailed specifications remain in their canonical Markdown pages.",
     "Do not infer missing specifications.",
     "Treat implementation progress separately from specification status.",
-    "For current-milestone or next-step decisions, read currentMilestone.source first and use its D-track completion gates to identify the active design boundary.",
+    "For current-milestone or next-step decisions, read currentMilestone.source and parallelMilestone.source before identifying the active design boundary.",
+    "P0 is an independent preflight milestone and may advance out of D/A order when doing so reduces high-cost rework.",
     "For application progress, verify implementationProgress and the current untold-game main branch before assigning or completing an A milestone.",
     "For next-step decisions, check decisionInbox, then verify the candidate topic in its canonical source through ai-index.json.",
     "Follow linked continuation sources to the latest confirmed handoff before proposing a new design decision."
