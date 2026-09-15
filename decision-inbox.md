@@ -6,11 +6,11 @@
 
 ## 状態
 
-- 未統合件数: **0**
+- 未統合件数: **1**
 
 ## 未統合の確定事項
 
-（なし）
+- D-20260915-01 | topic: 情報アーキテクチャ | target: pages/story/information-architecture.md | section: 情報ノード | op: merge | [確定] 情報ネットワークの基本ノードは `TRUTH / INFO / OBSERVATION / QUESTION / INFERENCE` の5種類とする。`CLUE` は同格の情報ノードにはせず、INFO・OBSERVATION・台詞・名称などがHIDDEN/OPEN/TRUTH等を意図的に示唆していることを表す制作側メタ情報・接続情報として扱い、既存の `pages/story/foreshadowing-ledger.md` のCLUE管理と接続する。未確定の真相はTRUTHとして扱わず、既存のOPEN管理を維持する。
 
 ## 記録形式
 
