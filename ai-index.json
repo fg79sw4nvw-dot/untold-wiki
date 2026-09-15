@@ -16,6 +16,7 @@
     "wiki-governance": ["pages/governance/spec-maintenance.md", "governance/criteria-registry.json", "governance/review-ledger.json"],
     "overview-design": ["pages/home.md", "pages/design-philosophy.md"],
     "foreshadowing-hidden-truths": ["pages/story/foreshadowing-ledger.md", "pages/design-philosophy.md"],
+    "information-architecture": ["pages/story/information-architecture.md", "pages/story/foreshadowing-ledger.md", "pages/design-philosophy.md", "pages/systems/recording.md"],
     "naming": ["pages/naming-guidelines.md"],
     "world-islands-orba": ["pages/world/world.md", "pages/world/world-map.md"],
     "terrain-passability": ["pages/world/terrain-allocation-final.md"],
@@ -50,6 +51,16 @@
     "fallback-implementation-details": ["pages/development/implementation.md"]
   },
   "sectionHints": {
+    "pages/story/information-architecture.md": [
+      "このページの役割【確定】",
+      "他の正本との役割分担【確定】",
+      "情報ノード",
+      "接続関係【未確定】",
+      "NPC知識モデル【未確定】",
+      "プレイヤー認識段階【未確定】",
+      "設計の往復【方向性確定】",
+      "次に決めること"
+    ],
     "pages/systems/facilities.md": [
       "基本方針【確定】",
       "仕様の分担【確定】",
