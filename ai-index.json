@@ -21,6 +21,7 @@
     "map-production-workflow": ["pages/development/map-preview-workflow.md", "pages/development/production-workflow.md"],
     "overview-design": ["pages/home.md", "pages/design-philosophy.md"],
     "promotion-daily-insights": ["pages/promotion/promotion-daily-log.md"],
+    "creator-reflection-journal": ["pages/journal/creator-reflection-log.md"],
     "artwork-visual-identity": ["pages/art-direction.md", "pages/design-philosophy.md"],
     "homage-design-research": ["pages/design-philosophy.md", "pages/story/homage-ledger.md"],
     "foreshadowing-hidden-truths": ["pages/story/foreshadowing-ledger.md", "pages/design-philosophy.md"],
@@ -98,6 +99,11 @@
       "記録ステータス",
       "日次エントリーの書式",
       "運用ルール"
+    ],
+    "pages/journal/creator-reflection-log.md": [
+      "目的",
+      "日付索引",
+      "記録形式"
     ],
     "pages/art-direction.md": [
       "現在の基準【確定】",
