@@ -15,6 +15,8 @@
     {"slug":"pikko-island","category":"世界","path":"pages/world/pikko-island.md"},
     {"slug":"forna-island","category":"世界","path":"pages/world/forna-island.md"},
     {"slug":"sasara-island","category":"世界","path":"pages/world/sasara-island.md"},
+    {"slug":"sea-routes","category":"世界","path":"pages/world/sea-routes.md"},
+    {"slug":"old-crossing-mine","category":"世界","path":"pages/world/old-crossing-mine.md"},
     {"slug":"terrain-allocation-final","category":"世界","path":"pages/world/terrain-allocation-final.md"},
     {"slug":"region-mask","category":"世界","path":"pages/world/region-mask.md"},
     {"slug":"world-rivers-lakes-crossings","category":"世界","path":"pages/world/world-rivers-lakes-crossings.md"},
