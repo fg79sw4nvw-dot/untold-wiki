@@ -25,7 +25,7 @@
     "artwork-visual-identity": ["pages/art-direction.md", "pages/design-philosophy.md"],
     "homage-design-research": ["pages/design-philosophy.md", "pages/story/homage-ledger.md"],
     "foreshadowing-hidden-truths": ["pages/story/foreshadowing-ledger.md", "pages/design-philosophy.md"],
-    "information-architecture": ["pages/story/information-architecture.md", "pages/story/foreshadowing-ledger.md", "pages/design-philosophy.md", "pages/systems/recording.md"],
+    "information-architecture": ["pages/story/information-architecture.md", "pages/story/foreshadowing-ledger.md", "pages/design-philosophy.md", "pages/systems/recording.md", "pages/systems/recording-experience-design.md"],
     "narrative-world-place-design": ["pages/story/narrative-world-design.md", "pages/story/foreshadowing-ledger.md", "pages/story/information-architecture.md", "pages/world/world.md"],
     "naming": ["pages/naming-guidelines.md"],
     "world-islands-orba": ["pages/world/world.md", "pages/world/world-map.md"],
@@ -40,7 +40,8 @@
     "book": ["pages/systems/book.md"],
     "cards-cardization": ["pages/systems/cards.md", "pages/systems/cardization-rules.md"],
     "free-pocket-items-equipment": ["pages/systems/free-pocket.md"],
-    "recording-information": ["pages/systems/recording.md"],
+    "recording-information": ["pages/systems/recording.md", "pages/systems/recording-experience-design.md"],
+    "recording-value-experience": ["pages/systems/recording-experience-design.md", "pages/systems/recording.md", "pages/story/information-architecture.md", "pages/design-philosophy.md"],
     "recipes-cooking": ["pages/systems/recipes.md", "pages/systems/facilities.md", "pages/systems/economy.md"],
     "crafting-workshop": ["pages/systems/recipes.md", "pages/systems/facilities.md", "pages/systems/economy.md", "pages/systems/free-pocket.md"],
     "time-seasons-weather": ["pages/systems/time-weather.md"],
@@ -170,6 +171,17 @@
       "システム文と記録【確定】",
       "NPC会話以外の記録UI【確定】",
       "内部データとヒントの関係【確定】"
+    ],
+    "pages/systems/recording-experience-design.md": [
+      "記録の役割【確定】",
+      "記録を通した体験の段階【方向性確定】",
+      "記録が価値を持つ場面の設計基準【確定】",
+      "記録を使った設計パターン【設計基準】",
+      "BOOKでの思考支援【方向性確定／具体機能未定】",
+      "序盤での導入【方向性確定／具体場面未定】",
+      "やりすぎ防止【確定】",
+      "世界観との接続【確定】",
+      "制作時チェック【確定】"
     ],
     "pages/systems/free-pocket.md": [
       "基本方針【確定】",
