@@ -70,7 +70,7 @@ D1では個別の全セリフや全カードを完成させる必要はないが
 
 ---
 
-## D2：世界・地域・移動・場所設計完成【現在】
+## D2：世界・地域・移動・場所設計完成【完了】
 
 オルバ全体を、単なる地図ではなく、探索・情報・物語・カード取得が配置できるゲーム世界として完成させる。
 
@@ -85,9 +85,11 @@ D1では個別の全セリフや全カードを完成させる必要はないが
 
 D2完了時点では、世界の「器」と各場所の役割が完成していることを重視する。
 
+**2026-09-16完了。** 主島・周辺6島、地形・水系・主要街道・橋・海域・ポルトナ集中型航路・D-01古渡り坑を含む移動網を確定した。10都市について規模・人口帯・地区構成・統治・固有施設・主要NPC群を実装可能な粒度まで揃え、固有ダンジョン10種の由来・地域役割を整理した。`pages/world/regional-information-placement.md` で全地域の探索目的、主要情報、伏線、カード配置方向を確定し、`pages/story/creative-culture-placement.md` で封印以前の創作文化をエルド＝分類、セトラ＝本文、モルグレイ＝制作過程へ分散する構造を確定した。`pages/open-items.md` 上のD2未確定項目は0件。オルバ名称の厳密な世界内語源はv1では意図的非固定とし、未設計項目には数えない。
+
 ---
 
-## D3：ゲームシステム・UI・数値仕様完成
+## D3：ゲームシステム・UI・数値仕様完成【現在】
 
 確定した世界とコンテンツを、同じルールで動かせるよう、全主要システムを実装可能な粒度まで完成させる。
 
@@ -258,34 +260,3 @@ A4達成時点で、機能とコンテンツは一通り揃っている。ここ
 ただし、設計中に後段の重要依存が見つかった場合は、D番号だけを機械的に守って放置せず、前倒しで決めてよい。マイルストーンは思考停止用の柵ではなく、完成漏れを防ぐための管理単位である。
 
 ---
-
-# 現在地
-
-- **活動中の設計マイルストーン：D2「世界・地域・移動・場所設計完成」**
-- **完了済み：D0「既存設計の統合・棚卸し」、D1「世界・物語・情報構造の骨格完成」**
-- **次の設計マイルストーン：D3「ゲームシステム・UI・数値仕様完成」**
-- アプリ側の現在地は `pages/development/implementation-status.md` で管理し、実装確認なしに本ページで完了判定しない。
-
-現在はD2を進めつつ、確定済み仕様の実装をAトラックで並行してよい。
-
----
-
-## 主な関連正本
-
-- 設計思想：`pages/design-philosophy.md`
-- 世界：`pages/world/world.md`
-- ワールドマップ：`pages/world/world-map.md`
-- 地域・場所の物語設計：`pages/story/narrative-world-design.md`
-- 情報構築：`pages/story/information-architecture.md`
-- メイン情報進行：`pages/story/main-information-progression.md`
-- 伏線台帳：`pages/story/foreshadowing-ledger.md`
-- 主人公：`pages/story/protagonist.md`
-- ゲームマスター：`pages/story/gamemaster.md`
-- カード：`pages/systems/cards.md`
-- BOOK：`pages/systems/book.md`
-- 記録：`pages/systems/recording.md`
-- QUESTION：`pages/systems/question.md`
-- システム群：`pages/systems/`
-- 未確定事項：`pages/open-items.md`
-- 未統合確定事項：`decision-inbox.md`
-- 実装状況：`pages/development/implementation-status.md`
