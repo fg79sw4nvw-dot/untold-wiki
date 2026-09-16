@@ -3,20 +3,21 @@
   "updatedAt": "2026-09-16",
   "purpose": "Non-authoritative navigation pointers for the current UNTOLD development state.",
   "currentMilestone": {
-    "label": "D0：既存設計の統合・棚卸し",
+    "label": "D1：世界・物語・情報構造の骨格完成",
     "source": "pages/development/free-exploration-core-milestone.md"
   },
   "parallelMilestone": {
     "label": "P0：先行リスク解消・成立性検証",
     "source": "pages/development/preflight-risk-milestone.md",
-    "status": "active in parallel with D0",
+    "status": "active in parallel with D1",
     "currentStep": "P0-3：アセット制作パイプライン実証",
     "currentStepSource": "pages/development/asset-pipeline.md",
     "completedSteps": ["P0-1", "P0-2"]
   },
   "milestoneTracks": {
     "design": {
-      "current": "D0",
+      "current": "D1",
+      "completed": ["D0"],
       "completion": "D5：設計監査・凍結"
     },
     "application": {
@@ -43,6 +44,9 @@
     "contentDataModel": "pages/development/content-data-model.md",
     "saveDataModel": "pages/development/save-data-model.md",
     "assetPipeline": "pages/development/asset-pipeline.md",
+    "informationArchitecture": "pages/story/information-architecture.md",
+    "foreshadowingLedger": "pages/story/foreshadowing-ledger.md",
+    "questionSystem": "pages/systems/question.md",
     "eldTown": "pages/world/eld.md",
     "eldLayout": "pages/world/eld-layout.md",
     "eldNpcs": "pages/world/eld-npcs.md",
