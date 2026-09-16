@@ -19,11 +19,9 @@ D0棚卸し後は、各項目を「どの設計マイルストーンで処理す
 ### 世界・地理
 
 - オルバという名称の厳密な世界内語源。物語・ゲーム体験上の必要性がなければ、意図的に固定しない判断も可。
-- 建造物・遺構を主体とするダンジョンについて、必要なストーリー上の由来・過去・役割と配置方針。
 
 ### 各都市・地域
 
-- 各都市の主要NPC**群**の役割・人数構成・地域内配置方針。個々の名前、台詞、個別イベント内容はD4で確定する。
 - 各地域に置く主要情報、伏線、カード、探索目的の配置方針。
 - 封印以前の創作文化を示す「物語本文の断片」と「創作過程の制作痕跡」について、配置地域と場所の役割を確定する。具体的な作品本文・物品名等はD4で確定する。
 
@@ -34,10 +32,13 @@ D0棚卸し後は、各項目を「どの設計マイルストーンで処理す
 - 地域設計上必要な産業・文化の方向性。具体的な産業比率、祭り名、料理名等の製品版内容はD4側で扱う。
 - 各都市の統治骨格。ボナペの浜市評議会を含む。
 - 各都市の固有施設骨格。
+- 10都市の主要NPC群・人数構成・地域内配置方針。`pages/world/npc-group-allocation.md` を正本とする。
 - レグナ城内の城主家秘密記録保管場所「継承庫」。
 - レグナ ↔ モルグレイの特別な都市間関係と元後継候補の確定骨格。
 - 周辺6島の地域役割、ポルトナ集中型航路、通常片道時間、発着地点。
 - D-01古渡り坑の両入口・構造・発見と踏破後の扱い。
+- 固有ダンジョンの自然型／地域史型／主要史接続型の分類、および建造物・遺構系ダンジョンの由来・地域役割。`pages/world/dungeon-origins.md` を正本とする。
+- D-02の正式名称「石顎峰」、D-05の正式名称「鏡葦沼」。
 - ナーヴァ川、リュメイ湖、ユラ湖、ミオ沼群、主要橋3本の名称・材質・外観方向。
 - M-02西岩門、M-03東峠道の具体ルート。
 - 主要海域名。`pages/world/sea-regions.md` を正本とする。
@@ -49,13 +50,15 @@ D0棚卸し後は、各項目を「どの設計マイルストーンで処理す
 - `pages/world/region-mask.md`
 - `pages/world/world-rivers-lakes-crossings.md`
 - `pages/world/sea-regions.md`
+- `pages/world/sea-routes.md`
+- `pages/world/dungeon-origins.md`
+- `pages/world/old-crossing-mine.md`
+- `pages/world/npc-group-allocation.md`
 - `pages/world/towns.md`
 - `pages/world/setra-island.md`
 - `pages/world/pikko-island.md`
 - `pages/world/forna-island.md`
 - `pages/world/sasara-island.md`
-- `pages/world/sea-routes.md`
-- `pages/world/old-crossing-mine.md`
 - 各都市専用ページ
 - `pages/story/regna-morgrey-relation.md`
 
