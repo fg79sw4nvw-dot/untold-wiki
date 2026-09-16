@@ -38,21 +38,29 @@
     "protagonist": ["pages/story/protagonist.md"],
     "gamemaster": ["pages/story/gamemaster.md"],
     "book": ["pages/systems/book.md"],
-    "cards-cardization": ["pages/systems/cards.md", "pages/systems/cardization-rules.md"],
+    "cards-cardization": ["pages/systems/cards.md", "pages/systems/cardization-rules.md", "pages/systems/card-template.md", "pages/systems/waiting-cardization-presentation.md"],
     "free-pocket-items-equipment": ["pages/systems/free-pocket.md"],
+    "player-state-survival": ["pages/systems/player-state.md", "pages/systems/encounters.md", "pages/systems/time-weather.md", "pages/systems/environment-hazards.md"],
     "recording-information": ["pages/systems/recording.md", "pages/systems/recording-experience-design.md"],
     "recording-value-experience": ["pages/systems/recording-experience-design.md", "pages/systems/recording.md", "pages/story/information-architecture.md", "pages/design-philosophy.md"],
+    "question": ["pages/systems/question.md", "pages/systems/recording.md", "pages/story/information-architecture.md"],
     "recipes-cooking": ["pages/systems/recipes.md", "pages/systems/facilities.md", "pages/systems/economy.md"],
     "crafting-workshop": ["pages/systems/recipes.md", "pages/systems/facilities.md", "pages/systems/economy.md", "pages/systems/free-pocket.md"],
-    "time-seasons-weather": ["pages/systems/time-weather.md"],
+    "time-seasons-weather": ["pages/systems/time-weather.md", "pages/systems/weather-runtime.md"],
+    "tide": ["pages/systems/tide.md", "pages/world/pikko-island.md"],
+    "environment-hazards": ["pages/systems/environment-hazards.md", "pages/world/forna-island.md"],
     "spells": ["pages/systems/spells.md"],
     "facilities-common": ["pages/systems/facilities.md", "pages/systems/economy.md"],
     "economy-shops": ["pages/systems/economy.md", "pages/systems/facilities.md"],
     "encounters": ["pages/systems/encounters.md"],
     "events": ["pages/systems/events.md"],
+    "ship-travel": ["pages/systems/ship-travel.md", "pages/world/sea-routes.md"],
     "gameplay-ui": ["pages/systems/gameplay-ui.md"],
     "map-display": ["pages/systems/map-display-basis.md"],
     "tutorial-guidance": ["pages/systems/tutorial-guidance.md"],
+    "save-load": ["pages/systems/save-load.md", "pages/development/save-data-model.md"],
+    "settings": ["pages/systems/settings.md"],
+    "title-new-game": ["pages/systems/title-new-game.md", "pages/systems/save-load.md", "pages/story/protagonist.md"],
     "opening-early-eld": ["pages/development/eld-opening-sequence.md", "pages/development/day2-home-tutorial.md", "pages/cards/055-book-eating-rat.md", "pages/cards/055-book-eating-rat-clue-grouping.md", "pages/world/protagonist-home.md", "pages/story/homage-ledger.md"],
     "required-introduction-day1-day2": ["pages/development/eld-opening-sequence.md", "pages/cards/055-book-eating-rat.md", "pages/cards/055-book-eating-rat-clue-grouping.md", "pages/development/day2-home-tutorial.md", "pages/world/protagonist-home.md"],
     "card-055-clue-grouping": ["pages/cards/055-book-eating-rat-clue-grouping.md", "pages/systems/recording.md", "pages/cards/055-book-eating-rat.md"],
@@ -62,159 +70,28 @@
     "fallback-implementation-details": ["pages/development/implementation.md"]
   },
   "sectionHints": {
-    "ai-core-context.md": [
-      "UNTOLDの核",
-      "世界の真相・約180年前の過去",
-      "記録文化封印と現代社会",
-      "ストーリーの背骨",
-      "情報構築",
-      "伏線・非公開情報",
-      "主人公",
-      "ゲームマスター",
-      "BOOK・RECORD・QUESTION・カード",
-      "世界地理・地形",
-      "都市",
-      "水系・街道・交通",
-      "設計上の重要な禁止・ガード",
-      "現在の開発優先順位",
-      "話題別の正本ショートカット"
-    ],
-    "pages/development/production-workflow.md": [
-      "目的",
-      "役割の分離【確定】",
-      "制作単位【確定】",
-      "標準フロー【確定】",
-      "Vercel自動デプロイ方針【確定】",
-      "中断・接続切断・別チャットへの復旧【確定】",
-      "完了条件【確定】"
-    ],
-    "pages/development/map-preview-workflow.md": [
-      "目的",
-      "基本手順",
-      "最終確認から実装までの一体運用",
-      "自動プレビュー生成",
-      "実機確認との役割分担"
-    ],
-    "pages/promotion/promotion-daily-log.md": [
-      "目的",
-      "記録ステータス",
-      "日次エントリーの書式",
-      "運用ルール"
-    ],
-    "pages/journal/creator-reflection-log.md": [
-      "目的",
-      "日付索引",
-      "記録形式"
-    ],
-    "pages/art-direction.md": [
-      "現在の基準【確定】",
-      "タイトル書体の予備候補【保持】",
-      "運用方針【確定】",
-      "現時点で未確定のもの"
-    ],
-    "pages/story/homage-ledger.md": [
-      "運用ルール【確定】",
-      "記録形式【確定】",
-      "HOM-001：やたらと親切な男【確定】",
-      "HOM-002：問いを楽しむ老婆【確定】",
-      "HOM-003：泥跳ね猪の肉と豪快な焼き方【確定】",
-      "HOM-004：正体の分からない旅人料理【確定】",
-      "序盤で意図的にオマージュを置かない核【確定】"
-    ],
-    "pages/story/narrative-world-design.md": [
-      "物語の背骨【確定事項の設計用要約】",
-      "場所に重ねる5つの物語レイヤー【設計基準】",
-      "現時点で確定している地域別の物語機能",
-      "人物関係の管理【確定】",
-      "伏線を場所へ置くときの基準【確定】",
-      "地域設計用テンプレート【確定】",
-      "地域設計の手順【確定】"
-    ],
-    "pages/story/information-architecture.md": [
-      "このページの役割【確定】",
-      "他の正本との役割分担【確定】",
-      "情報ノード【確定】",
-      "接続関係【確定】",
-      "NPC知識モデル【確定】",
-      "プレイヤー認識段階【確定】",
-      "設計の往復【確定】",
-      "個別ネットワークの記録形式【確定】"
-    ],
-    "pages/systems/facilities.md": [
-      "基本方針【確定】",
-      "仕様の分担【確定】",
-      "情報屋：共通利用仕様【確定】",
-      "食堂：共通利用仕様【確定】",
-      "作業場：共通利用仕様【確定】"
-    ],
-    "pages/systems/recipes.md": [
-      "基本方針【確定】",
-      "BOOKでの確認【確定】",
-      "レシピ共通データ【確定】",
-      "料理レシピ【確定】",
-      "製作レシピ【確定】"
-    ],
-    "pages/systems/book.md": [
-      "基本構造【確定】",
-      "ページ構成【基準として確定】",
-      "タイトル「UNTOLD」の意味【方向性確定／具体的な開示方法未定】",
-      "1ページ目タイトルページ【確定／装飾一部未定】",
-      "BOOKを開く位置【確定】",
-      "BOOKを閉じる操作【確定】"
-    ],
-    "pages/systems/recording.md": [
-      "基本",
-      "記録タイミング【確定】",
-      "「思い出す」【確定】",
-      "記録単位と表示【確定】",
-      "会話中の記録UI【確定】",
-      "システム文と記録【確定】",
-      "NPC会話以外の記録UI【確定】",
-      "内部データとヒントの関係【確定】"
-    ],
-    "pages/systems/recording-experience-design.md": [
-      "記録の役割【確定】",
-      "記録を通した体験の段階【方向性確定】",
-      "記録が価値を持つ場面の設計基準【確定】",
-      "記録を使った設計パターン【設計基準】",
-      "BOOKでの思考支援【方向性確定／具体機能未定】",
-      "序盤での導入【方向性確定／具体場面未定】",
-      "やりすぎ防止【確定】",
-      "世界観との接続【確定】",
-      "制作時チェック【確定】"
-    ],
-    "pages/systems/free-pocket.md": [
-      "基本方針【確定】",
-      "容量・満杯時の挙動【確定／具体数未定】",
-      "スタック方式【確定】",
-      "入手方法【暫定】",
-      "UI・操作構成【確定】",
-      "スペルカード【確定】",
-      "食料【確定】",
-      "装備【確定】"
-    ],
-    "pages/systems/time-weather.md": [
-      "時間・季節",
-      "天候",
-      "地形別の基準天候遷移【確定】"
-    ],
-    "pages/cards/055-book-eating-rat.md": [
-      "Day 1：初回の記録操作",
-      "Day 1：図書館から自宅へ",
-      "Day 1：自宅到着から就寝",
-      "Day 2：朝から図書館へ向かうまで",
-      "Day 2：正式な依頼",
-      "導入終了・自由探索開始【確定】"
-    ],
-    "pages/cards/055-book-eating-rat-clue-grouping.md": [
-      "司書（ELD-NPC-010）【確定】",
-      "共通ルールとの関係【確定】"
-    ],
-    "pages/development/day2-home-tutorial.md": [
-      "Day 2朝の進行【確定】",
-      "携帯食の包み【確定】",
-      "チュートリアル上の目的【確定】"
-    ]
+    "ai-core-context.md": ["UNTOLDの核", "世界の真相・約180年前の過去", "記録文化封印と現代社会", "ストーリーの背骨", "情報構築", "伏線・非公開情報", "主人公", "ゲームマスター", "BOOK・RECORD・QUESTION・カード", "世界地理・地形", "都市", "水系・街道・交通", "設計上の重要な禁止・ガード", "現在の開発優先順位", "話題別の正本ショートカット"],
+    "pages/development/production-workflow.md": ["目的", "役割の分離【確定】", "制作単位【確定】", "標準フロー【確定】", "Vercel自動デプロイ方針【確定】", "中断・接続切断・別チャットへの復旧【確定】", "完了条件【確定】"],
+    "pages/story/information-architecture.md": ["このページの役割【確定】", "情報ノード【確定】", "接続関係【確定】", "NPC知識モデル【確定】", "プレイヤー認識段階【確定】"],
+    "pages/systems/book.md": ["基本構造【確定】", "ページ構成【D3確定】", "BOOKを開く位置【確定】", "BOOKを閉じる操作【確定】"],
+    "pages/systems/free-pocket.md": ["基本方針【確定】", "BOOK内ページ・カテゴリ容量【D3確定】", "容量・満杯時の挙動【確定】", "UI・操作構成【確定】", "装備【確定】"],
+    "pages/systems/player-state.md": ["HP【確定】", "空腹度【D3確定】", "空腹度0【D3確定】", "継続効果の時間【確定】", "セーブ対象【確定】"],
+    "pages/systems/recording.md": ["記録タイミング【確定】", "「思い出す」【確定】", "記録単位と表示【確定】", "会話中の記録UI【確定】", "NPC会話以外の記録UI【確定】"],
+    "pages/systems/question.md": ["基本概念【確定】", "BOOK内配置【D3確定】", "問いの作成【確定】", "問いの解明【確定】", "RECORD削除との関係【D3確定】"],
+    "pages/systems/recipes.md": ["基本方針【確定】", "BOOKでの確認【確定】", "料理レシピ【確定】", "製作レシピ【確定】"],
+    "pages/systems/facilities.md": ["基本方針【確定】", "情報屋：共通利用仕様【確定】", "食堂：共通利用仕様【確定】", "作業場：共通利用仕様【確定】"],
+    "pages/systems/economy.md": ["基本", "通常ショップ", "営業時間・施設利用【D3確定】", "宿屋【確定】"],
+    "pages/systems/encounters.md": ["基本方針【確定】", "危険度【確定】", "エンカウント後の安全距離【確定】", "情報数による選出率補正【確定】", "D4へ送る個別データ"],
+    "pages/systems/time-weather.md": ["時間・季節", "天候", "地形別の基準天候遷移【確定】", "気温【一部確定】", "寒冷蓄積値【確定】"],
+    "pages/systems/weather-runtime.md": ["基本原則", "weatherRegion", "地域別プロフィール", "保存・更新"],
+    "pages/systems/tide.md": ["基本周期", "潮位状態", "安全処理", "セーブ対象"],
+    "pages/systems/environment-hazards.md": ["基本方針", "高温", "有害ガス", "落石", "蒸気・灰"],
+    "pages/systems/ship-travel.md": ["基本方針", "料金", "時間処理", "欠航", "帰還保証"],
+    "pages/systems/save-load.md": ["セーブ枠【確定】", "手動セーブ可能状態【確定】", "オートセーブ【確定】", "現在地・再開位置【D3確定】", "ロード時の復元順【確定】"],
+    "pages/systems/settings.md": ["BOOK内配置【確定】", "v1設定項目【D3確定】", "保存範囲【確定】"],
+    "pages/systems/title-new-game.md": ["タイトル画面【確定】", "ロード／セーブデータ選択【確定】", "「はじめから」【確定】", "主人公名入力【確定】", "性別選択【確定】", "ニューゲーム開始確認【確定】"],
+    "pages/systems/tutorial-guidance.md": ["基本方針【D3確定】", "UIの情報開示順【D3確定】", "視覚誘導【D3確定】", "初回記録チュートリアル【D3確定】", "D3とD4の境界"],
+    "pages/cards/055-book-eating-rat.md": ["Day 1：初回の記録操作", "Day 1：図書館から自宅へ", "Day 2：正式な依頼", "導入終了・自由探索開始【確定】"]
   },
   "fallback": "If no route matches cleanly, consult ai-manifest.json instead of searching or reading the entire repository."
 }
