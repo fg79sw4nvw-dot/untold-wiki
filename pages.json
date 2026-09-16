@@ -43,6 +43,7 @@
     {"slug":"homage-ledger","category":"ストーリー","path":"pages/story/homage-ledger.md"},
     {"slug":"information-architecture","category":"ストーリー","path":"pages/story/information-architecture.md"},
     {"slug":"narrative-world-design","category":"ストーリー","path":"pages/story/narrative-world-design.md"},
+    {"slug":"regna-morgrey-relation","category":"ストーリー","path":"pages/story/regna-morgrey-relation.md"},
     {"slug":"book","category":"システム","path":"pages/systems/book.md"},
     {"slug":"card-system","category":"システム","path":"pages/systems/cards.md"},
     {"slug":"cardization-rules","category":"システム","path":"pages/systems/cardization-rules.md"},
