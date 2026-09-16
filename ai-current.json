@@ -3,21 +3,21 @@
   "updatedAt": "2026-09-16",
   "purpose": "Non-authoritative navigation pointers for the current UNTOLD development state.",
   "currentMilestone": {
-    "label": "D1：世界・物語・情報構造の骨格完成",
+    "label": "D2：世界・地域・移動・場所設計完成",
     "source": "pages/development/free-exploration-core-milestone.md"
   },
   "parallelMilestone": {
     "label": "P0：先行リスク解消・成立性検証",
     "source": "pages/development/preflight-risk-milestone.md",
-    "status": "active in parallel with D1",
+    "status": "active in parallel with D2",
     "currentStep": "P0-3：アセット制作パイプライン実証",
     "currentStepSource": "pages/development/asset-pipeline.md",
     "completedSteps": ["P0-1", "P0-2"]
   },
   "milestoneTracks": {
     "design": {
-      "current": "D1",
-      "completed": ["D0"],
+      "current": "D2",
+      "completed": ["D0", "D1"],
       "completion": "D5：設計監査・凍結"
     },
     "application": {
@@ -45,6 +45,7 @@
     "saveDataModel": "pages/development/save-data-model.md",
     "assetPipeline": "pages/development/asset-pipeline.md",
     "informationArchitecture": "pages/story/information-architecture.md",
+    "mainInformationProgression": "pages/story/main-information-progression.md",
     "foreshadowingLedger": "pages/story/foreshadowing-ledger.md",
     "questionSystem": "pages/systems/question.md",
     "eldTown": "pages/world/eld.md",
@@ -75,6 +76,7 @@
     "For Web, iPhone native, TestFlight, or release-build test timing, read deviceTestStrategy before deciding whether a milestone requires real-device validation.",
     "For the current P0-3 Web/Safari execution, read deviceTestRunbook after deviceTestStrategy.",
     "For next-step decisions, check decisionInbox, then verify the candidate topic in its canonical source through ai-index.json.",
+    "For main story information progression or NET-001 through NET-007 dependency questions, read mainInformationProgression after informationArchitecture.",
     "Follow linked continuation sources to the latest confirmed handoff before proposing a new design decision."
   ]
 }
