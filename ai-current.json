@@ -3,21 +3,21 @@
   "updatedAt": "2026-09-16",
   "purpose": "Non-authoritative navigation pointers for the current UNTOLD development state.",
   "currentMilestone": {
-    "label": "D3：ゲームシステム・UI・数値仕様完成",
+    "label": "D4：全コンテンツ設計完成",
     "source": "pages/development/free-exploration-core-milestone.md"
   },
   "parallelMilestone": {
     "label": "P0：先行リスク解消・成立性検証",
     "source": "pages/development/preflight-risk-milestone.md",
-    "status": "active in parallel with D3",
+    "status": "active in parallel with D4",
     "currentStep": "P0-3：アセット制作パイプライン実証",
     "currentStepSource": "pages/development/asset-pipeline.md",
     "completedSteps": ["P0-1", "P0-2"]
   },
   "milestoneTracks": {
     "design": {
-      "current": "D3",
-      "completed": ["D0", "D1", "D2"],
+      "current": "D4",
+      "completed": ["D0", "D1", "D2", "D3"],
       "completion": "D5：設計監査・凍結"
     },
     "application": {
@@ -49,7 +49,18 @@
     "foreshadowingLedger": "pages/story/foreshadowing-ledger.md",
     "regionalInformationPlacement": "pages/world/regional-information-placement.md",
     "creativeCulturePlacement": "pages/story/creative-culture-placement.md",
+    "bookSystem": "pages/systems/book.md",
+    "recordingSystem": "pages/systems/recording.md",
     "questionSystem": "pages/systems/question.md",
+    "freePocketSystem": "pages/systems/free-pocket.md",
+    "playerStateSystem": "pages/systems/player-state.md",
+    "timeWeatherSystem": "pages/systems/time-weather.md",
+    "weatherRuntime": "pages/systems/weather-runtime.md",
+    "encounterSystem": "pages/systems/encounters.md",
+    "shipTravelSystem": "pages/systems/ship-travel.md",
+    "saveLoadSystem": "pages/systems/save-load.md",
+    "titleNewGameSystem": "pages/systems/title-new-game.md",
+    "settingsSystem": "pages/systems/settings.md",
     "eldTown": "pages/world/eld.md",
     "eldLayout": "pages/world/eld-layout.md",
     "eldNpcs": "pages/world/eld-npcs.md",
@@ -66,6 +77,7 @@
     "Detailed specifications remain in their canonical Markdown pages.",
     "Do not infer missing specifications.",
     "Treat implementation progress separately from specification status.",
+    "D3 common system design is complete; do not reopen D3 because D4 individual content data is still missing.",
     "UNTOLD v1 is store-first: App Store / Google Play are the formal product distribution targets; Vercel/Web is for fast development validation, demos, previews, and promotion.",
     "For platform, distribution, Web-demo, or store-release decisions, read platformDistributionStrategy first.",
     "For SNS, promotion requests, Web demos, creator/media previews, pre-release communication, or launch promotion, read promotionStrategy.",
