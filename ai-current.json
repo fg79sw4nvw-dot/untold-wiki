@@ -3,21 +3,21 @@
   "updatedAt": "2026-09-16",
   "purpose": "Non-authoritative navigation pointers for the current UNTOLD development state.",
   "currentMilestone": {
-    "label": "D2：世界・地域・移動・場所設計完成",
+    "label": "D3：ゲームシステム・UI・数値仕様完成",
     "source": "pages/development/free-exploration-core-milestone.md"
   },
   "parallelMilestone": {
     "label": "P0：先行リスク解消・成立性検証",
     "source": "pages/development/preflight-risk-milestone.md",
-    "status": "active in parallel with D2",
+    "status": "active in parallel with D3",
     "currentStep": "P0-3：アセット制作パイプライン実証",
     "currentStepSource": "pages/development/asset-pipeline.md",
     "completedSteps": ["P0-1", "P0-2"]
   },
   "milestoneTracks": {
     "design": {
-      "current": "D2",
-      "completed": ["D0", "D1"],
+      "current": "D3",
+      "completed": ["D0", "D1", "D2"],
       "completion": "D5：設計監査・凍結"
     },
     "application": {
@@ -47,6 +47,8 @@
     "informationArchitecture": "pages/story/information-architecture.md",
     "mainInformationProgression": "pages/story/main-information-progression.md",
     "foreshadowingLedger": "pages/story/foreshadowing-ledger.md",
+    "regionalInformationPlacement": "pages/world/regional-information-placement.md",
+    "creativeCulturePlacement": "pages/story/creative-culture-placement.md",
     "questionSystem": "pages/systems/question.md",
     "eldTown": "pages/world/eld.md",
     "eldLayout": "pages/world/eld-layout.md",
