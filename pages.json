@@ -11,6 +11,7 @@
     {"slug":"spec-maintenance","category":"管理","path":"pages/governance/spec-maintenance.md"},
     {"slug":"world","category":"世界","path":"pages/world/world.md"},
     {"slug":"world-map","category":"世界","path":"pages/world/world-map.md"},
+    {"slug":"setra-island","category":"世界","path":"pages/world/setra-island.md"},
     {"slug":"terrain-allocation-final","category":"世界","path":"pages/world/terrain-allocation-final.md"},
     {"slug":"region-mask","category":"世界","path":"pages/world/region-mask.md"},
     {"slug":"world-rivers-lakes-crossings","category":"世界","path":"pages/world/world-rivers-lakes-crossings.md"},
