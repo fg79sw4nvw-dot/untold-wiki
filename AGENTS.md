@@ -20,6 +20,7 @@ Wiki全体、`README.md`、`ai-manifest.json`、`pages/chatgpt-guide.md` を毎�
 - Wiki保守、監査、判断基準、参照ルール自体を変更する場合は `pages/chatgpt-guide.md` と `pages/governance/spec-maintenance.md` を読む。
 - **仕様確定からゲーム本体実装、GitHub、Vercel、実機確認までを一続きで進める場合、または中断後に作業地点を復元する場合は `pages/development/production-workflow.md` を読む。** MAP制作では併せて `pages/development/map-preview-workflow.md` を読む。
 - **ゲーム本体の実装で、セーブ／永続化、入力、描画、アセット、PWA、ブラウザAPI、OS固有機能、将来のストア配信に関わる変更を行う場合は `governance/platform-portability.md` も確認する。**
+- **実際のゲーム開発作業そのものではないUNTOLDの話題（SNS、公開、配布、宣伝、音声・動画、作者活動、作品の見せ方・届け方等）を扱う場合は、通常の関連正本に加えて `governance/promotion-strategy.md` を確認する。収益・無料配布・本体外活動の収益化可否が関わる場合は `governance/monetization-policy.md` も確認する。UNTOLD本体は非収益、本体外活動の収益化は未規定という区別を維持する。**
 
 ## 絶対ルール
 
