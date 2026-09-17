@@ -6,7 +6,7 @@
 
 ## 状態
 
-- 未統合件数: **5**
+- 未統合件数: **6**
 
 ## 未統合の確定事項
 
@@ -15,6 +15,7 @@
 - D-20260917-03 | topic: No.10 | target: pages/cards/regna-morgrey-card-bundle.md | section: No.10 | op: replace | key: 表示名候補：荷帰り札【承認待ち】 | [確定] No.10の正式表示名は「戻り札」とする。
 - D-20260917-04 | topic: No.11 | target: pages/cards/regna-morgrey-card-bundle.md | section: No.11 | op: merge | [確定] No.11の正式表示名は「並び札」とする。性質の説明は「手元から離すと、その日の自分の受付順と同じ位置へ紛れ込む」とし、「先に受付した人数と同じ位置」という曖昧な表現は使わない。
 - D-20260917-05 | topic: No.12 | target: pages/cards/regna-morgrey-card-bundle.md | section: No.12 | op: replace | key: 表示名候補：継ぎ足し里程石【承認待ち】 | [確定] No.12の正式表示名は「継ぎ足しの里程石」とする。
+- D-20260917-06 | topic: メインストーリー認識進行 | target: pages/story/main-information-progression.md | section: 4フェーズ構成 / 緩いゲート付き並行型 | op: merge | [確定] UNTOLDのメインストーリー進行は、探索に伴って世界そのものが変化・異常化していく構造ではない。世界と既存の痕跡は原則として最初から同じ状態にあり、主人公・プレイヤーが情報を集めて照合することで、同じ風景・習慣・物・過去の痕跡の意味や見え方が変わっていく「認識進行」として記述する。ストーリー要約・フェーズ説明でも「世界がおかしくなる」「異常が増える」等の、世界側の進行変化と誤読される表現は避ける。
 
 ## 直近の統合確認
 
