@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-16",
+  "updatedAt": "2026-09-17",
   "purpose": "Non-authoritative navigation pointers for the current UNTOLD development state.",
   "currentMilestone": {
     "label": "D4：全コンテンツ設計完成",
@@ -49,6 +49,7 @@
     "foreshadowingLedger": "pages/story/foreshadowing-ledger.md",
     "regionalInformationPlacement": "pages/world/regional-information-placement.md",
     "creativeCulturePlacement": "pages/story/creative-culture-placement.md",
+    "specifiedCardPointWorkflow": "pages/cards/point-production-workflow.md",
     "bookSystem": "pages/systems/book.md",
     "recordingSystem": "pages/systems/recording.md",
     "questionSystem": "pages/systems/question.md",
@@ -89,6 +90,7 @@
     "For map creation or large map revisions, read mapPreviewWorkflow and then close the work unit through productionWorkflow unless the user explicitly stops before implementation or delivery.",
     "For Web, iPhone native, TestFlight, or release-build test timing, read deviceTestStrategy before deciding whether a milestone requires real-device validation.",
     "For the current P0-3 Web/Safari execution, read deviceTestRunbook after deviceTestStrategy.",
+    "For D4 specified-card point generation or interactive card ideation, read specifiedCardPointWorkflow before proposing or refining point candidates.",
     "For next-step decisions, check decisionInbox, then verify the candidate topic in its canonical source through ai-index.json.",
     "For main story information progression or NET-001 through NET-007 dependency questions, read mainInformationProgression after informationArchitecture.",
     "Follow linked continuation sources to the latest confirmed handoff before proposing a new design decision."
