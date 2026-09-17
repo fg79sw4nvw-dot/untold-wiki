@@ -6,13 +6,14 @@
 
 ## 状態
 
-- 未統合件数: **3**
+- 未統合件数: **4**
 
 ## 未統合の確定事項
 
 - D-20260917-01 | topic: 指定カード命名 | target: pages/cards/card-roster.md | section: D4制作ルール | op: append | [確定] 指定カードの命名は、対象や状態が直感的に伝わる簡潔さを優先し、設定にない人格化・含意・詩的な意味を足しすぎない。「置き去りの移管票」程度の分かりやすさとひねり量を基準とする。
 - D-20260917-02 | topic: No.09 | target: pages/cards/regna-morgrey-card-bundle.md | section: No.09 | op: replace | key: 表示名候補：四門分銅【承認待ち】 | [確定] No.09の正式表示名は「残り印の分銅」とする。
 - D-20260917-03 | topic: No.10 | target: pages/cards/regna-morgrey-card-bundle.md | section: No.10 | op: replace | key: 表示名候補：荷帰り札【承認待ち】 | [確定] No.10の正式表示名は「戻り札」とする。
+- D-20260917-04 | topic: No.11 | target: pages/cards/regna-morgrey-card-bundle.md | section: No.11 | op: merge | [確定] No.11の正式表示名は「並び札」とする。性質の説明は「手元から離すと、その日の自分の受付順と同じ位置へ紛れ込む」とし、「先に受付した人数と同じ位置」という曖昧な表現は使わない。
 
 ## 直近の統合確認
 
