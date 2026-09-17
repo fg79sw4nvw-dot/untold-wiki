@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-09-15",
+  "updatedAt": "2026-09-17",
   "purpose": "Track retroactive application of decision criteria to existing UNTOLD specifications. Append a review entry whenever a criterion is added, materially changed, or explicitly re-applied to existing content.",
   "reviewStates": {
     "complete": "All identified matching current pages were reviewed for this criterion revision.",
@@ -53,6 +53,41 @@
         "AGENTS.md remains unchanged; existing bootstrap already routes agents through README.md, ai-manifest.json and pages/chatgpt-guide.md, which now contain the governance route."
       ],
       "notes": "Existing design and naming criteria were registered without changing their substantive rule text. The maintenance layer was deduplicated so confirmed game facts remain in topical canonical pages. No substantive game-design decision was changed by this review."
+    },
+    {
+      "reviewId": "REV-20260917-002",
+      "date": "2026-09-17",
+      "reason": "Add a point-first specified-card production criterion while preserving all already confirmed card content",
+      "criterionIds": [
+        "CARD-GEN-001"
+      ],
+      "criterionRegistryRevision": 5,
+      "mode": "future_only",
+      "state": "complete",
+      "reviewedPaths": [
+        "pages/systems/cards.md",
+        "pages/cards/card-roster.md",
+        "pages/cards/eld-card-bundle.md",
+        "pages/cards/regna-morgrey-card-bundle.md",
+        "pages/systems/card-template.md",
+        "pages/design-philosophy.md",
+        "pages/naming-guidelines.md",
+        "pages/chatgpt-guide.md",
+        "pages/governance/spec-maintenance.md",
+        "governance/criteria-registry.json"
+      ],
+      "changedPaths": [
+        "pages/systems/cards.md",
+        "pages/cards/card-roster.md",
+        "governance/criteria-registry.json",
+        "governance/review-ledger.json"
+      ],
+      "exceptions": [
+        "Confirmed, D4-confirmed, individual-canonical, regional-bundle-canonical, and otherwise already fixed card fields were not rewritten.",
+        "The five existing unintegrated decisions in decision-inbox.md were left intact and were not reinterpreted by this criterion.",
+        "Card-template, design-philosophy, naming-guidelines, ChatGPT-guide, and existing regional-bundle pages were checked for compatibility but required no text changes."
+      ],
+      "notes": "The only direct process conflict was the region-first simultaneous-design step in card-roster. It was replaced with point generation/fixation first, then classification/region allocation, acquisition design, and selective connection. Existing ratios, regional counts, information networks, foreshadowing, progression, dependencies, and person-role allocations remain unchanged. Intentional foreshadowing still follows design-philosophy/foreshadowing-ledger; an independent card is not automatically a clue."
     }
   ]
 }

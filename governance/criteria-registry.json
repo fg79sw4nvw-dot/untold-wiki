@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "registryRevision": 4,
-  "updatedAt": "2026-09-15",
+  "registryRevision": 5,
+  "updatedAt": "2026-09-17",
   "purpose": "Machine-readable registry of cross-cutting decision criteria for UNTOLD. The rule text remains canonical in the referenced Markdown source; this registry gives each criterion a stable id, scope, and retroactive behavior.",
   "statusSemantics": {
     "confirmed": "Current criterion and usable for design/review.",
@@ -16,7 +16,9 @@
   "defaultRetroactiveModeForNewCriteria": "review",
   "scopeProfiles": {
     "all-current-spec": {
-      "includePrefixes": ["pages/"],
+      "includePrefixes": [
+        "pages/"
+      ],
       "excludePaths": [
         "pages/development/implementation-status.md",
         "pages/development/eld-playthrough-goal.md",
@@ -26,7 +28,9 @@
       "notes": "Current design/specification pages. Progress, retired milestones, legacy history and governance documentation are excluded."
     },
     "narrative-design": {
-      "includePrefixes": ["pages/story/"],
+      "includePrefixes": [
+        "pages/story/"
+      ],
       "includePaths": [
         "pages/design-philosophy.md",
         "pages/systems/events.md",
@@ -37,7 +41,9 @@
       "notes": "Story, dialogue, character reaction, event presentation and narrative-facing content."
     },
     "place-narrative-design": {
-      "includePrefixes": ["pages/world/"],
+      "includePrefixes": [
+        "pages/world/"
+      ],
       "includePaths": [
         "pages/story/narrative-world-design.md",
         "pages/systems/facilities.md",
@@ -46,7 +52,11 @@
       "notes": "Terrain, town, settlement, dungeon, ruin, facility and other place-design work. Apply these criteria to the narrative-facing parts of a place rather than mechanically to pure coordinate or collision data. If a dedicated dungeon directory is added later, extend this scope."
     },
     "naming-bearing-content": {
-      "includePrefixes": ["pages/world/", "pages/story/", "pages/cards/"],
+      "includePrefixes": [
+        "pages/world/",
+        "pages/story/",
+        "pages/cards/"
+      ],
       "includePaths": [
         "pages/systems/cards.md",
         "pages/systems/spells.md",
@@ -66,8 +76,19 @@
         "pages/development/eld-opening-sequence.md",
         "pages/world/eld-npcs.md"
       ],
-      "includePrefixes": ["pages/cards/"],
+      "includePrefixes": [
+        "pages/cards/"
+      ],
       "notes": "Content that can deliberately imply hidden truths, unresolved truths or future reveals."
+    },
+    "specified-card-production": {
+      "includePrefixes": [
+        "pages/cards/"
+      ],
+      "includePaths": [
+        "pages/systems/cards.md"
+      ],
+      "notes": "Specified-card concept generation and completion work. Apply CARD-GEN-001 only to unresolved or newly changed portions. Confirmed, D4-confirmed, individual-canonical, regional-bundle-canonical, and otherwise already fixed fields remain protected; ordinary-person detail authority in card-roster also remains in force."
     }
   },
   "criteria": [
@@ -75,8 +96,13 @@
       "id": "GOV-SOURCE-001",
       "title": "One canonical source per fact",
       "status": "confirmed",
-      "source": {"path": "pages/governance/spec-maintenance.md", "heading": "正本を一つにする"},
-      "scopes": ["all-current-spec"],
+      "source": {
+        "path": "pages/governance/spec-maintenance.md",
+        "heading": "正本を一つにする"
+      },
+      "scopes": [
+        "all-current-spec"
+      ],
       "retroactiveMode": "review",
       "origin": "governance-bootstrap",
       "revision": 1
@@ -85,8 +111,13 @@
       "id": "DESIGN-EMOTION-001",
       "title": "主人公とプレイヤーの感情同期",
       "status": "confirmed",
-      "source": {"path": "pages/design-philosophy.md", "heading": "主人公とプレイヤーの感情同期【確定】"},
-      "scopes": ["narrative-design"],
+      "source": {
+        "path": "pages/design-philosophy.md",
+        "heading": "主人公とプレイヤーの感情同期【確定】"
+      },
+      "scopes": [
+        "narrative-design"
+      ],
       "retroactiveMode": "review",
       "origin": "existing-confirmed-rule",
       "revision": 1
@@ -95,8 +126,13 @@
       "id": "DESIGN-MYSTERY-001",
       "title": "違和感と世界の謎は説明より体験を優先する",
       "status": "confirmed",
-      "source": {"path": "pages/design-philosophy.md", "heading": "違和感と世界の謎【確定】"},
-      "scopes": ["narrative-design"],
+      "source": {
+        "path": "pages/design-philosophy.md",
+        "heading": "違和感と世界の謎【確定】"
+      },
+      "scopes": [
+        "narrative-design"
+      ],
       "retroactiveMode": "review",
       "origin": "existing-confirmed-rule",
       "revision": 1
@@ -105,8 +141,13 @@
       "id": "DESIGN-FORESHADOW-001",
       "title": "意図的な伏線は追跡可能な対象と回収先を持つ",
       "status": "confirmed",
-      "source": {"path": "pages/design-philosophy.md", "heading": "伏線と含みの扱い【確定】"},
-      "scopes": ["foreshadowing-content"],
+      "source": {
+        "path": "pages/design-philosophy.md",
+        "heading": "伏線と含みの扱い【確定】"
+      },
+      "scopes": [
+        "foreshadowing-content"
+      ],
       "retroactiveMode": "review",
       "origin": "existing-confirmed-rule",
       "revision": 1
@@ -115,8 +156,13 @@
       "id": "DESIGN-NPC-KNOWLEDGE-001",
       "title": "NPCの知識量と情報源を成立させる",
       "status": "confirmed",
-      "source": {"path": "pages/design-philosophy.md", "heading": "NPCの認識差・知識差【確定】"},
-      "scopes": ["narrative-design"],
+      "source": {
+        "path": "pages/design-philosophy.md",
+        "heading": "NPCの認識差・知識差【確定】"
+      },
+      "scopes": [
+        "narrative-design"
+      ],
       "retroactiveMode": "review",
       "origin": "existing-confirmed-rule",
       "revision": 1
@@ -125,8 +171,13 @@
       "id": "DESIGN-INFERENCE-001",
       "title": "答えではなく推理可能な根拠を渡す",
       "status": "confirmed",
-      "source": {"path": "pages/design-philosophy.md", "heading": "情報と推理【確定】"},
-      "scopes": ["narrative-design"],
+      "source": {
+        "path": "pages/design-philosophy.md",
+        "heading": "情報と推理【確定】"
+      },
+      "scopes": [
+        "narrative-design"
+      ],
       "retroactiveMode": "review",
       "origin": "existing-confirmed-rule",
       "revision": 1
@@ -135,8 +186,13 @@
       "id": "DESIGN-PROTAGONIST-001",
       "title": "主人公の人格との整合",
       "status": "confirmed",
-      "source": {"path": "pages/design-philosophy.md", "heading": "主人公の人格との整合【確定】"},
-      "scopes": ["narrative-design"],
+      "source": {
+        "path": "pages/design-philosophy.md",
+        "heading": "主人公の人格との整合【確定】"
+      },
+      "scopes": [
+        "narrative-design"
+      ],
       "retroactiveMode": "review",
       "origin": "existing-confirmed-rule",
       "revision": 1
@@ -145,8 +201,14 @@
       "id": "DESIGN-TONE-001",
       "title": "シリアスさと遊び心のバランス",
       "status": "confirmed",
-      "source": {"path": "pages/design-philosophy.md", "heading": "シリアスさと遊び心のバランス【確定】"},
-      "scopes": ["narrative-design", "naming-bearing-content"],
+      "source": {
+        "path": "pages/design-philosophy.md",
+        "heading": "シリアスさと遊び心のバランス【確定】"
+      },
+      "scopes": [
+        "narrative-design",
+        "naming-bearing-content"
+      ],
       "retroactiveMode": "review",
       "origin": "existing-confirmed-rule",
       "revision": 1
@@ -155,8 +217,15 @@
       "id": "DESIGN-HOMAGE-001",
       "title": "序盤のHUNTER×HUNTERオマージュはWebで認知度と使われ方を調査し元ネタ明記付きで提案する",
       "status": "confirmed",
-      "source": {"path": "pages/design-philosophy.md", "heading": "序盤のHUNTER×HUNTERオマージュ【確定】"},
-      "scopes": ["narrative-design", "place-narrative-design", "naming-bearing-content"],
+      "source": {
+        "path": "pages/design-philosophy.md",
+        "heading": "序盤のHUNTER×HUNTERオマージュ【確定】"
+      },
+      "scopes": [
+        "narrative-design",
+        "place-narrative-design",
+        "naming-bearing-content"
+      ],
       "retroactiveMode": "future_only",
       "origin": "user-requested-early-homage-hook",
       "revision": 2
@@ -165,8 +234,13 @@
       "id": "DESIGN-PLACE-STORY-001",
       "title": "場所は現在・過去・真相接続・人物関係・認識段階を分けて設計する",
       "status": "confirmed",
-      "source": {"path": "pages/story/narrative-world-design.md", "heading": "場所に重ねる5つの物語レイヤー【設計基準】"},
-      "scopes": ["place-narrative-design"],
+      "source": {
+        "path": "pages/story/narrative-world-design.md",
+        "heading": "場所に重ねる5つの物語レイヤー【設計基準】"
+      },
+      "scopes": [
+        "place-narrative-design"
+      ],
       "retroactiveMode": "future_only",
       "origin": "user-requested-place-story-reference",
       "revision": 1
@@ -175,8 +249,14 @@
       "id": "DESIGN-RELATION-001",
       "title": "人物関係を知識・行動・会話・依頼へ意味のある形で接続する",
       "status": "confirmed",
-      "source": {"path": "pages/story/narrative-world-design.md", "heading": "人物関係の管理【確定】"},
-      "scopes": ["narrative-design", "place-narrative-design"],
+      "source": {
+        "path": "pages/story/narrative-world-design.md",
+        "heading": "人物関係の管理【確定】"
+      },
+      "scopes": [
+        "narrative-design",
+        "place-narrative-design"
+      ],
       "retroactiveMode": "future_only",
       "origin": "user-requested-place-story-reference",
       "revision": 1
@@ -185,8 +265,14 @@
       "id": "DESIGN-PLACE-CLUE-001",
       "title": "場所の伏線は直接証拠・二次的痕跡・再解釈を区別して配置する",
       "status": "confirmed",
-      "source": {"path": "pages/story/narrative-world-design.md", "heading": "伏線を場所へ置くときの基準【確定】"},
-      "scopes": ["place-narrative-design", "foreshadowing-content"],
+      "source": {
+        "path": "pages/story/narrative-world-design.md",
+        "heading": "伏線を場所へ置くときの基準【確定】"
+      },
+      "scopes": [
+        "place-narrative-design",
+        "foreshadowing-content"
+      ],
       "retroactiveMode": "future_only",
       "origin": "user-requested-place-story-reference",
       "revision": 1
@@ -195,8 +281,13 @@
       "id": "NAME-CORE-001",
       "title": "命名の基本方針と識別性",
       "status": "confirmed",
-      "source": {"path": "pages/naming-guidelines.md", "heading": "基本方針【確定】"},
-      "scopes": ["naming-bearing-content"],
+      "source": {
+        "path": "pages/naming-guidelines.md",
+        "heading": "基本方針【確定】"
+      },
+      "scopes": [
+        "naming-bearing-content"
+      ],
       "retroactiveMode": "future_only",
       "origin": "existing-confirmed-rule",
       "revision": 1
@@ -205,8 +296,13 @@
       "id": "NAME-PLACE-001",
       "title": "地名は記憶と探索上の分かりやすさを重視する",
       "status": "confirmed",
-      "source": {"path": "pages/naming-guidelines.md", "heading": "地名【確定】"},
-      "scopes": ["naming-bearing-content"],
+      "source": {
+        "path": "pages/naming-guidelines.md",
+        "heading": "地名【確定】"
+      },
+      "scopes": [
+        "naming-bearing-content"
+      ],
       "retroactiveMode": "future_only",
       "origin": "existing-confirmed-rule",
       "revision": 1
@@ -215,8 +311,13 @@
       "id": "NAME-CARD-001",
       "title": "カード名は印象と暗示を持たせつつ答えを露出しすぎない",
       "status": "confirmed",
-      "source": {"path": "pages/naming-guidelines.md", "heading": "カード名【確定】"},
-      "scopes": ["naming-bearing-content"],
+      "source": {
+        "path": "pages/naming-guidelines.md",
+        "heading": "カード名【確定】"
+      },
+      "scopes": [
+        "naming-bearing-content"
+      ],
       "retroactiveMode": "future_only",
       "origin": "existing-confirmed-rule",
       "revision": 1
@@ -225,10 +326,30 @@
       "id": "NAME-CHECK-001",
       "title": "正式採用前の命名チェック",
       "status": "confirmed",
-      "source": {"path": "pages/naming-guidelines.md", "heading": "採用前チェック【確定】"},
-      "scopes": ["naming-bearing-content"],
+      "source": {
+        "path": "pages/naming-guidelines.md",
+        "heading": "採用前チェック【確定】"
+      },
+      "scopes": [
+        "naming-bearing-content"
+      ],
       "retroactiveMode": "future_only",
       "origin": "existing-confirmed-rule",
+      "revision": 1
+    },
+    {
+      "id": "CARD-GEN-001",
+      "title": "指定カードは異質な点を先に固定し、接続を後工程で選ぶ",
+      "status": "confirmed",
+      "source": {
+        "path": "pages/systems/cards.md",
+        "heading": "点先行・接続後置の制作原則【確定】"
+      },
+      "scopes": [
+        "specified-card-production"
+      ],
+      "retroactiveMode": "future_only",
+      "origin": "user-requested-card-randomness-rebalance",
       "revision": 1
     }
   ]
